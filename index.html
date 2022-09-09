@@ -75,8 +75,10 @@
         </section>
         <section class="restauran-guide">
             <h3>Get a free Paris restaurant guide!</h3>
-            <input type="email" placeholder="Email*" required>
-            <a href="#" class="button">Get a guide</a>
+            <form class="restauran-guide__form" action="https://formspree.io/f/meqdepnj" method="POST">
+                <input type="email" name="email" placeholder="Email*" required>
+                <input type="submit" value="Get a guide">
+            </form> 
         </section>
         <section class="membership">
             <h3>Membership</h3>
