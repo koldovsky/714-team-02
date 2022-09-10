@@ -45,6 +45,7 @@
   .guide-card__title {
       text-align: center;
       width: 75%;
+      margin: 30px;
   }
   
   .social-links {
