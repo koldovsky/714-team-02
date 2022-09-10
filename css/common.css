@@ -16,6 +16,8 @@
   --paragraph-color: #6c6e75;
   --light-paragraph-color: #81888d;
   --price-color: #b2a385 !important;
+  --brand-size: 25px;
+  --brand-gap: 12px;
   font-family: "Prata", serif;
   color: var(--main-color);
 }
@@ -41,4 +43,25 @@ h2 {
 
 p {
   color: var(--paragraph-color);
+}
+
+.phone{
+  color: var(--price-color);
+}
+
+.brand{
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid var(--price-color);
+  width: var(--brand-size);
+  height: var(--brand-size);
+  text-align: center;
+  line-height: var(--brand-size);
+  font-size: 13px;
+}
+.brand:not(:last-child){
+  margin-right: var(--brand-gap);
+}
+.brand i{
+  color: var(--price-color);
 }
