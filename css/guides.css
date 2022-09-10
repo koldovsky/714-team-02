@@ -1,5 +1,5 @@
 .cilantro-guides {
-    background-image: url("/img/guides-background.png");
+    background-image: url("../img/guides-background.png");
     display: flex;
     flex-direction: column;
   }
