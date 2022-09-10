@@ -1,32 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap");
 
-*, *:after, *:before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    transition: .5s ease-in-out;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.5s ease-in-out;
 }
 
 :root {
-    --main-color: #192b42;
-    --brande-color: #b2a385;
-    --paragraph-color: #6c6e75;
-    --light-paragraph-color: #81888d;
-    --price-color: #b2a385!important;
-    font-family: 'Prata', serif;
-
+  --main-color: #192b42;
+  --white-color: #fff;
+  --brande-color: #b2a385;
+  --paragraph-color: #6c6e75;
+  --light-paragraph-color: #81888d;
+  --price-color: #b2a385 !important;
+  font-family: "Prata", serif;
+  color: var(--main-color);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+  outline: none;
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  margin: 50px;
+  font-size: 30px;
+}
+
+p {
+  color: var(--paragraph-color);
 }
