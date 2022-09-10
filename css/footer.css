@@ -1,6 +1,6 @@
 .footer{
     background-color: var(--main-color);
-    color: white;
+    color: var(--white-color);
     font-family: var(--font-formal);
 }
 
@@ -15,14 +15,15 @@
 }
 
 .footer .sitemap__logo{
+    color: var(--white-color);
     font-size: 24px;
 }
 .footer .menu__item{
-    color: white;
+    color: var(--white-color);
 }
 .footer__brand{
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
 }
 .footer__brand i{
-    color: white;
+    color: var(--white-color);
 }
