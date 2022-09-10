@@ -1,9 +1,9 @@
 .header {
-    background-color: var(--main-color);
     color: white;
 }
 
 .header__topbar {
+    background-color: var(--main-color);
     font-family: var(--font-formal);
 }
 
@@ -26,9 +26,27 @@
     content: "";
 }
 
+.header__greeting-container {
+    position: relative;
+    height: 783.6px;
+    background-image: url(../img/header-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greeting-container__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-overlay-color);
+}
+
 h1.header__greeting {
     font-size: 92px;
     font-weight: 300;
+    text-align: center;
 }
 
 .header__link-button {
