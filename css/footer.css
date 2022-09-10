@@ -1,4 +1,28 @@
 .footer{
     background-color: var(--main-color);
     color: white;
+    font-family: var(--font-formal);
+}
+
+.footer__section{
+    margin: 0 32px;
+}
+.footer__sitemap{
+    border-bottom: 1px solid var(--light-paragraph-color);
+}
+.footer__copyright{
+    font-size: 14px;
+}
+
+.footer .sitemap__logo{
+    font-size: 24px;
+}
+.footer .menu__item{
+    color: white;
+}
+.footer__brand{
+    border: 1px solid white;
+}
+.footer__brand i{
+    color: white;
 }
