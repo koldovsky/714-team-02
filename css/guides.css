@@ -44,11 +44,57 @@
   
   .guide-card__title {
       text-align: center;
-      margin-top: 30px;
       width: 75%;
   }
   
   .social-link {
       margin: 30px;
+  }
+
+  .restauran-guide {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .restauran-guide__container {
+    margin: 60px;
+    background-color: var(--white-color);
+  }
+
+  .restauran-guide__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restauran-guige-form__email {
+    width: 50%;
+  }
+
+  .restauran-guige-form__button {
+    margin: 20px;
+    width: 50%;
+    
+    background-color: var(--main-color);
+    color: var(--white-color);
+  }
+
+  .membership {
+    background-color: rgb(206, 200, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .membership-logo {
+    width: 15%;
   }
   
