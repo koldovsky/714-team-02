@@ -53,5 +53,5 @@ h1.header__greeting {
     font-size: 17.6px;
     padding: 12px 22.5px;
     background-color: var(--white-color);
-    color: var(--dark-button-color);
+    color: var(--main-color);
 }
