@@ -1,4 +1,39 @@
-.header{
+.header {
     background-color: var(--main-color);
     color: white;
+}
+
+.header__topbar {
+    font-family: var(--font-formal);
+}
+
+.header .nav__logo {
+    color: white;
+    font-size: 32px;
+    font-family: var(--font-informal);
+}
+
+.header .menu__item {
+    color: white;
+    transition: none;
+}
+
+.header .menu__item:hover {
+    color: var(--price-color);
+}
+
+.header .menu .menu__item:hover::after {
+    content: "";
+}
+
+h1.header__greeting {
+    font-size: 92px;
+    font-weight: 300;
+}
+
+.header__link-button {
+    font-size: 17.6px;
+    padding: 12px 22.5px;
+    background-color: white;
+    color: var(--dark-button-color);
 }

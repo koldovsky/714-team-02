@@ -1,4 +1,7 @@
+/*Font Prata*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap");
+/*Font Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 *,
 *:after,
@@ -10,15 +13,19 @@
 }
 
 :root {
+  --font-informal: "Prata", serif;
+  --font-formal: 'Open Sans', sans-serif;
   --main-color: #192b42;
   --white-color: #fff;
-  --brande-color: #b2a385;
   --paragraph-color: #6c6e75;
   --light-paragraph-color: #81888d;
   --price-color: #b2a385 !important;
+  --dark-button-color: #192b42;
+  --brand-color: #b2a385;
   --brand-size: 25px;
-  --brand-gap: 12px;
-  font-family: "Prata", serif;
+  --brand-gap: 10px;
+  --phone-color: #877454;
+  font-family: var(--font-prata);
   color: var(--main-color);
 }
 
@@ -46,13 +53,13 @@ p {
 }
 
 .phone{
-  color: var(--price-color);
+  color: var(--phone-color);
 }
 
 .brand{
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid var(--price-color);
+  border: 1px solid var(--brand-color);
   width: var(--brand-size);
   height: var(--brand-size);
   text-align: center;
