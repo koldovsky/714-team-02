@@ -64,7 +64,7 @@ p {
   height: var(--brand-size);
   text-align: center;
   line-height: var(--brand-size);
-  font-size: 13px;
+  font-size: calc(var(--brand-size) / 2);
 }
 .brand:not(:last-child){
   margin-right: var(--brand-gap);
