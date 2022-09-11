@@ -1,29 +1,34 @@
-.footer{
+.footer {
     background-color: var(--main-color);
     color: var(--white-color);
     font-family: var(--font-formal);
 }
 
-.footer__section{
+.footer__section {
     margin: 0 32px;
 }
-.footer__sitemap{
+
+.footer__sitemap {
     border-bottom: 1px solid var(--light-paragraph-color);
 }
-.footer__copyright{
+
+.footer__copyright {
     font-size: 14px;
 }
 
-.footer .sitemap__logo{
+.footer .sitemap__logo {
     color: var(--white-color);
     font-size: 24px;
 }
-.footer .menu__item{
+
+.footer .menu__item {
     color: var(--white-color);
 }
-.footer__brand{
+
+.footer__brand {
     border: 1px solid var(--white-color);
 }
-.footer__brand i{
+
+.footer__brand i {
     color: var(--white-color);
 }
