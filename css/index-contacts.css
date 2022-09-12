@@ -1,0 +1,10 @@
+.contacts__title {
+    color: var(--main-color);
+    font-family: var(--font-informal);
+    font-size: 28px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+}
