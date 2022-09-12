@@ -8,3 +8,13 @@
     padding: 0px 0px 0px 0px;
     text-align: left;
 }
+.contacts__text {
+    color: var(--phone-color);
+    font-family: var(--font-informal);
+    font-size: 20px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+}
