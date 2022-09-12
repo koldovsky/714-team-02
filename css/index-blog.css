@@ -1,0 +1,10 @@
+.blog__title {
+    color: rgb (25, 43, 66);
+    font-family: var(--font-informal);
+    font-size: 25px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
