@@ -39,6 +39,6 @@
     padding: 0px 0px 0px 0px;
     text-align: center;
     }
-    a:hover {
+    .blog__cards__link:hover {
         text-decoration: underline;
     }
