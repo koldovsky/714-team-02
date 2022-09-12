@@ -32,3 +32,11 @@
 .footer__brand i {
     color: var(--white-color);
 }
+
+.footer__brand:hover {
+    background-color: var(--white-color);
+}
+
+.footer__brand:hover i {
+    color: var(--main-color);
+}

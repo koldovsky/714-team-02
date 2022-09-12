@@ -9,7 +9,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: 0.5s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
 }
 
 :root {
@@ -52,11 +52,11 @@ p {
   color: var(--paragraph-color);
 }
 
-.phone{
+.phone {
   color: var(--phone-color);
 }
 
-.brand{
+.brand {
   display: inline-block;
   border-radius: 50%;
   border: 1px solid var(--brand-color);
@@ -65,10 +65,23 @@ p {
   text-align: center;
   line-height: var(--brand-size);
   font-size: calc(var(--brand-size) / 2);
+  background-color: transparent;
+  transition-duration: 400ms;
 }
-.brand:not(:last-child){
+
+.brand:not(:last-child) {
   margin-right: var(--brand-gap);
 }
-.brand i{
+
+.brand i {
   color: var(--price-color);
+  transition-duration: 200ms;
+}
+
+.brand:hover {
+  background-color: var(--brand-color);
+}
+
+.brand:hover i {
+  color: var(--white-color);
 }

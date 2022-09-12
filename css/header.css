@@ -13,6 +13,14 @@
     font-family: var(--font-informal);
 }
 
+.header .topbar__brand:hover {
+    background-color: var(--brand-color);
+}
+
+.header .topbar__brand:hover i {
+    color: var(--main-color);
+}
+
 .header .menu__item {
     color: var(--white-color);
     transition: none;
