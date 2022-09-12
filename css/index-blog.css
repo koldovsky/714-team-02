@@ -8,3 +8,13 @@
     padding: 0px 0px 0px 0px;
     text-align: center;
 }
+.blog__text {
+    color: rgb (129, 136, 141);
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+}
