@@ -1,5 +1,5 @@
 .blog__title {
-    color: rgb (25, 43, 66);
+    color: var(--main-color);
     font-family: var(--font-informal);
     font-size: 25px;
     font-stretch: 100%;
@@ -9,7 +9,7 @@
     text-align: center;
 }
 .blog__text {
-    color: rgb (129, 136, 141);
+    color: var(--light-paragraph-color);
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-stretch: 100%;
@@ -19,7 +19,7 @@
     text-align: left;
 }
 .blog__cards__title {
-    color: rgb (25, 43, 66);
+    color: var(--main-color);
     font-family: var(--font-informal);
     font-size: 22px;
     font-stretch: 100%;
@@ -28,3 +28,17 @@
     padding: 0px 0px 0px 0px;
     text-align: left;
 }
+.blog__cards__link {
+    color: var(--phone-color);
+    cursor: pointer;
+    font-family: var(--font-informal);
+    font-size: 14.4px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
