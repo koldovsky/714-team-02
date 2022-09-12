@@ -24,6 +24,10 @@
 .footer .menu__item {
     color: var(--white-color);
 }
+.footer .menu__item:hover {
+    color: var(--price-color);
+    text-decoration: underline;
+}
 
 .footer__brand {
     border: 1px solid var(--white-color);
