@@ -8,7 +8,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 :root {
@@ -40,10 +39,10 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
-/* img {
+img {
   display: block;
   width: 100%;
-} */
+}
 
 h2 {
   margin: 50px 15px;
