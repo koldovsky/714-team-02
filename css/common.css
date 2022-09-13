@@ -1,7 +1,6 @@
-/*Font Prata*/
+/*Font Lato & Prata*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap");
-/*Font Lato*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
 
 *,
 *::after,
@@ -9,7 +8,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* transition: 0.5s ease-in-out; */
+
 }
 
 :root {
