@@ -1,6 +1,6 @@
 # 714-team-02
 1. WEB:<br>
-https://github.com/koldovsky/714-team-01
+https://koldovsky.github.io/714-team-02/
 
 2. Mock-Up:<br>
 https://5t22n.weblium.site/
