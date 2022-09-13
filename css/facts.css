@@ -1,1 +1,35 @@
-.cilantros-facts
+.cilantros-facts{
+    background-color: #192b42;
+    color: var(--white-color);    
+
+}
+
+.cilantros-facts-img{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font: weight 400px;;
+    height: auto;
+    width: 474;
+     ;
+
+}
+
+.cilantros-facts-header{
+    font-size: inherit;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.facts-icon{
+    color:  #b2a385;
+    background-color: #fff;
+    background-size: 50ch;
+    border-radius: 50%;
+}
+
+.find_tour-booking{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+}
