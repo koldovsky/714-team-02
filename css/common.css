@@ -1,7 +1,6 @@
-/*Font Prata*/
+/*Font Lato & Prata*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap");
-/*Font Lato*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 *,
 *::after,
@@ -9,12 +8,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* transition: 0.5s ease-in-out; */
 }
 
 :root {
   --font-informal: "Prata", serif;
-  --font-formal: 'Open Sans', sans-serif;
+  --font-formal: "Lato", sant-serif;
   --main-color: #192b42;
   --main-overlay-color: rgba(25, 43, 66, 0.6);
   --white-color: #fff;
@@ -24,7 +22,7 @@
   --brand-size: 25px;
   --brand-gap: 10px;
   --phone-color: #877454;
-  font-family: var(--font-prata);
+  font-family: var(--font-informal);
   color: var(--main-color);
 }
 
@@ -37,14 +35,14 @@ a {
   outline: none;
 }
 a:hover,
-input[type='submit']:hover{
+input[type="submit"]:hover {
   cursor: pointer;
 }
 
-/* img {
+img {
   display: block;
   width: 100%;
-} */
+}
 
 h2 {
   margin: 50px 15px;

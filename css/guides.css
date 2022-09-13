@@ -2,6 +2,8 @@
   background-image: url("../img/guides-background.png");
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 30px 24px;
 }
 
 .cilantro-guides__title {
@@ -9,72 +11,75 @@
   text-align: center;
 }
 
-.guides__cards {
+.cilantro-guides__cards {
   display: flex;
-  justify-content: space-around;
-  margin: 0 30px 60px 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .guide-card {
   background-color: var(--white-color);
-  width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  margin-top: 15px;
+  
 }
 
 .guide-card__image {
-  width: 120px;
+  width: 70px;
   border-radius: 50%;
   margin-top: 50px;
 }
 
 .guide-card__name {
-  margin: 15px;
+  margin-top: 15px;
+  
 }
 
 .guide-card__experience {
   font-size: 14px;
-  font-family: Lato, sant-serif;
+  font-family: var(--font-formal);
   margin-top: 30px;
   color: var(--light-paragraph-color);
 
 }
 
 .guide-card__title {
+  font-family: var(--font-formal);
   text-align: center;
   width: 75%;
   margin: 30px;
 }
 
-.social-links {
+.card__brands-container {
   margin: 30px;
 }
 
-.restauran-guide {
+.restaurant-guide {
   background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.restauran-guide__container {
+.restaurant-guide__container {
   margin: 60px;
   background-color: var(--white-color);
 }
 
-.restauran-guide__form {
+.restaurant-guide__form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.restauran-guige-form__email {
+.restaurant-guige-form__email {
   width: 50%;
 }
 
-.restauran-guige-form__button {
+.restaurant-guige-form__button {
   margin: 20px;
   width: 50%;
 
