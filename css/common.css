@@ -1,7 +1,7 @@
 /*Font Prata*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap");
 /*Font Lato*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
 *,
 *::after,
@@ -14,13 +14,12 @@
 
 :root {
   --font-informal: "Prata", serif;
-  --font-formal: 'Open Sans', sans-serif;
+  --font-formal: "Open Sans", sans-serif;
   --main-color: #192b42;
   --main-overlay-color: rgba(25, 43, 66, 0.6);
   --white-color: #fff;
   --paragraph-color: #6c6e75;
   --light-paragraph-color: #81888d;
-  --price-color: #b2a385 !important;
   --brand-color: #b2a385;
   --brand-size: 25px;
   --brand-gap: 10px;
@@ -38,7 +37,7 @@ a {
   outline: none;
 }
 a:hover,
-input[type='submit']:hover{
+input[type="submit"]:hover {
   cursor: pointer;
 }
 
