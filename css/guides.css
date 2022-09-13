@@ -2,6 +2,8 @@
   background-image: url("../img/guides-background.png");
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .cilantro-guides__title {
@@ -11,38 +13,41 @@
 
 .cilantro-guides__cards {
   display: flex;
-  justify-content: space-around;
-  margin: 0 30px 60px 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .guide-card {
   background-color: var(--white-color);
-  width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  margin-top: 15px;
+  
 }
 
 .guide-card__image {
-  width: 120px;
+  width: 70px;
   border-radius: 50%;
   margin-top: 50px;
 }
 
 .guide-card__name {
-  margin: 15px;
+  margin-top: 15px;
+  
 }
 
 .guide-card__experience {
   font-size: 14px;
-  font-family: Lato, sant-serif;
+  font-family: var(--font-formal);
   margin-top: 30px;
   color: var(--light-paragraph-color);
 
 }
 
 .guide-card__title {
+  font-family: var(--font-formal);
   text-align: center;
   width: 75%;
   margin: 30px;
