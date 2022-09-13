@@ -28,7 +28,7 @@
 }
 
 .header .menu__item:hover {
-    color: var(--price-color);
+    color: var(--brand-color);
 }
 
 .header .menu .menu__item:hover::after {
@@ -39,7 +39,7 @@
     transform: translate(-50%, 0);
     height: 2px;
     width: 72%;
-    background-color: var(--price-color);
+    background-color: var(--brand-color);
 }
 
 .header__greeting-container {

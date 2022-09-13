@@ -20,7 +20,6 @@
   --white-color: #fff;
   --paragraph-color: #6c6e75;
   --light-paragraph-color: #81888d;
-  --price-color: #b2a385 !important;
   --brand-color: #b2a385;
   --brand-size: 25px;
   --brand-gap: 10px;
@@ -83,7 +82,7 @@ p {
 }
 
 .brand i {
-  color: var(--price-color);
+  color: var(--brand-color);
   transition-duration: 200ms;
 }
 
