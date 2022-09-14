@@ -86,7 +86,12 @@ h1.header__greeting {
 .header__link-button {
     margin-top: 50px;
     font-size: 17.6px;
-    padding: 12px 22.5px;
+    padding: 12px 30px;
     background-color: var(--white-color);
     color: var(--main-color);
+    transition: 600ms;
+}
+
+.header__link-button:hover {
+    background-color: var(--header-link-button-hover-color);
 }

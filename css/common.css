@@ -11,6 +11,7 @@
 }
 
 :root {
+  --header-link-button-hover-color: #cddfe6;
   --font-informal: "Prata", serif;
   --font-formal: "Lato", sant-serif;
   --main-color: #192b42;
