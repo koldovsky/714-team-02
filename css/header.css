@@ -5,12 +5,12 @@
 .header__topbar {
     background-color: var(--main-color);
     font-family: var(--font-formal);
-    padding: 0 12vw;
+    padding: 0 11vw;
 }
 
 @media (min-width: 600px) {
     .header__topbar>.topbar__contacts {
-        padding: 5px 0px;
+        padding: 10px 0px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -45,7 +45,7 @@
 }
 
 .header .menu__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 18px;
 }
 
 .header .menu__item:hover {
