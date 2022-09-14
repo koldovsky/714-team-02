@@ -1,27 +1,35 @@
 .cilantros-facts{
     background-color: #192b42;
     color: var(--white-color);    
+    line-height: 4em;
 
 }
 
 .cilantros-facts-img{
-    position: relative;
-    display: block;
-    font-size: 16px;
-    font: weight 400px;;
+    float: left;
+    width: 50%;
     height: auto;
     width: 474;
-     ;
-
 }
 
 .cilantros-facts-header{
-    font-size: inherit;
+    position: relative;
+    top: 15px;
+    left: 15px;
     font-size: 29px;
-    font-weight: bold;
+    font-family: Prata,serif;
+    font-weight: 400;
+    line-height: 3em;
+}
+
+.cilantros-facts-container{
+    position: relative;
+    left: 35px;
 }
 
 .facts-icon{
+    position: relative;
+    right: 10px;
     color:  #b2a385;
     background-color: #fff;
     background-size: 50ch;
@@ -29,7 +37,16 @@
 }
 
 .find_tour-booking{
+    position: relative;
+    bottom: 350px;
+    left: 570px;
     background-color: #fff;
     color: black;
+  
+}
+
+.find_tour-header{
+    position: relative;
+    top: 350px;
     text-align: center;
 }
