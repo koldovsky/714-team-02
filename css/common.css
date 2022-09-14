@@ -91,3 +91,7 @@ p {
 .brand:hover i {
   color: var(--white-color);
 }
+
+.cilantros-facts{
+  display: block;
+}
