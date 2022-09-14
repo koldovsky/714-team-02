@@ -28,7 +28,8 @@
     font-size: 16px;
   }
 
-  .images__image {
+  .images__image, .card__image {
     margin: 10px;
+    width: 300px;
   }
   
