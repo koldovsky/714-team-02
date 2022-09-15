@@ -1,0 +1,41 @@
+.header__greeting-container {
+    position: relative;
+    height: 783.6px;
+    background: linear-gradient(var(--main-overlay-color), var(--main-overlay-color)),
+        url(../img/header-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 55px;
+}
+
+h1.header__greeting {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 60px;
+}
+
+@media (min-width: 600px) {
+    h1.header__greeting {
+        font-size: 92px;
+        line-height: 92px;
+    }
+}
+
+.header__link-button {
+    min-width: 150px;
+    margin-top: 50px;
+    font-size: 17.6px;
+    padding: 12px 30px;
+    background-color: var(--white-color);
+    color: var(--main-color);
+    transition: 600ms;
+}
+
+.header__link-button:hover {
+    background-color: var(--header-link-button-hover-color);
+}
