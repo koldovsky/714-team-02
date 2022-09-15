@@ -2,6 +2,7 @@
     background-color: var(--main-color);
     color: var(--white-color);
     font-family: var(--font-formal);
+    padding: 24px 0;
 }
 
 .footer__section {
@@ -10,27 +11,94 @@
 
 .footer__sitemap {
     border-bottom: 1px solid var(--light-paragraph-color);
+    text-align: center;
 }
 
-.footer__copyright {
-    font-size: 14px;
+.footer__sitemap>*:not(:first-child) {
+    padding: 25px 0;
+}
+
+.footer .sitemap__logo-container {
+    padding-bottom: 5px;
 }
 
 .footer .sitemap__logo {
     color: var(--white-color);
     font-size: 24px;
+    font-family: var(--font-informal);
+}
+
+.sitemap__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 767px) {
+    .footer__section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__sitemap {
+        text-align: left;
+        padding: 70px 0 30px;
+    }
+
+    .footer__sitemap>*:not(:first-child) {
+        padding: 0;
+    }
+
+    .sitemap__column {
+        flex-basis: 25%;
+        margin: 0 15px;
+    }
+
+    .sitemap__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .sitemap__menus-container {
+        flex-direction: row;
+    }
+
+    .sitemap__menu .menu__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .follow-us__text {
+        text-align: center;
+    }
 }
 
 .footer .menu__item {
     color: var(--white-color);
 }
+
 .footer .menu__item:hover {
     color: var(--brand-color);
     text-decoration: underline;
 }
 
+.sitemap__menu .menu__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.sitemap__follow-us>:first-child {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer__brands-container {
+    display: flex;
+    justify-content: center;
+}
+
 .footer__brand {
     border: 1px solid var(--white-color);
+    --brand-size: 30px;
+    --brand-icon-size: 15px;
 }
 
 .footer__brand i {
@@ -43,4 +111,19 @@
 
 .footer__brand:hover i {
     color: var(--main-color);
+}
+
+.footer__copyright {
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer__copyright p {
+    color: var(--white-color);
+    padding-top: 32px;
+}
+
+.footer__copyright strong {
+    text-transform: uppercase;
+    color: var(--brand-color);
 }
