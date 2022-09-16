@@ -5,10 +5,12 @@
         url(../img/header-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-height: 480px;
     padding: 0 55px;
 }
 
@@ -20,6 +22,19 @@ h1.header__greeting {
 }
 
 @media (min-width: 600px) {
+    .header__greeting-container {
+        max-height: 780px;
+    }
+}
+
+@media (min-width: 767px) {
+    h1.header__greeting {
+        font-size: 76px;
+        line-height: 76px;
+    }
+}
+
+@media (min-width: 991px) {
     h1.header__greeting {
         font-size: 92px;
         line-height: 92px;

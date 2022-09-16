@@ -5,10 +5,60 @@
 .header__topbar {
     background-color: var(--main-color);
     font-family: var(--font-formal);
-    padding: 0 11vw;
+    padding: 0 3.5vw;
 }
 
-@media (min-width: 600px) {
+.burger__menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.burger__line {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: var(--white-color);
+    transition: 300ms;
+}
+
+.burger__line:not(:last-child) {
+    margin-bottom: 5.2px;
+}
+
+.burger__menu-icon:hover {
+    cursor: pointer;
+}
+
+.burger__menu-icon:hover .burger__line {
+    background-color: var(--light-paragraph-color);
+}
+
+.topbar__nav {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__menu {
+    display: none;
+}
+
+.topbar__contacts {
+    display: none;
+}
+
+@media (min-width: 991px) {
+    .nav__menu {
+        display: block;
+    }
+
+    .burger__menu-icon {
+        display: none;
+    }
+
     .header__topbar>.topbar__contacts {
         padding: 10px 0px;
         display: flex;
