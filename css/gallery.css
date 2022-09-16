@@ -11,6 +11,9 @@
   }
 
   .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-color: var(--white-color);
   }
@@ -38,9 +41,14 @@
   .latest-on-instagram__images {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
   }
 
   .gallery__cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
   }
