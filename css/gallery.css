@@ -30,6 +30,12 @@
 
   .images__image, .card__image {
     margin: 10px;
-    width: 300px;
+    width: 100%;
+    height: auto;
+    max-width: 440px;
   }
   
+  .latest-on-instagram__images {
+    display: flex;
+    flex-wrap: wrap;
+  }
