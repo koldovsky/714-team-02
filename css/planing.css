@@ -20,7 +20,7 @@ float: left;
     
     width: 100%;
     }
-    p {
+    .text_planning> .container> p {
         width: 1000px;
         text-align: justify;
         margin: auto;
