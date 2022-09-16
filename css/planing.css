@@ -1,0 +1,19 @@
+.container{
+    padding: 0 5vw;
+    max-width: 1200px;
+}
+.text_planning> img {
+    width: 800px;
+}
+.container_icon> img {
+width: 60px;
+margin: 60px;
+}
+p {
+    width: 1000px;
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+}
