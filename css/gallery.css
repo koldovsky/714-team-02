@@ -39,3 +39,8 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .gallery__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
