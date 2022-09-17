@@ -9,6 +9,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon/travel_agency_favicon.png" />
   <link rel="stylesheet" type="text/css" href="libs/fontawesome/all.min.css" />
   <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+  <script type="text/javascript" src="js/burger.js" defer></script>
 </head>
 
 <body>
@@ -36,6 +38,11 @@
         <div class="logo-container nav__logo-container">
           <a href="." class="logo nav__logo">Cilantro</a>
         </div>
+        <div class="burger__menu-icon" title="Switch menu">
+          <span class="burger__line line-top"></span>
+          <span class="burger__line line-middle"></span>
+          <span class="burger__line line-bottom"></span>
+        </div>
         <div class="menu nav__menu">
           <a href="tours.html" class="menu__item">Tours</a>
           <a href="#aboutus" class="menu__item">About us</a>
@@ -55,83 +62,147 @@
   </header>
   <main>
     <!-- Leonid Gumennyy -->
-    <section class="cilantro-guides">
+    <section class="cilantro-guides-container">
       <h2 class="cilantro-guides__title">Cilantro's guides</h2>
       <div class="cilantro-guides__cards">
         <div class="guide-card">
-          <img class="guide-card__image" src="img/ann-leroy-foto.jpg" alt="Ann Leroy" />
+          <div class="guide-card__header-footer">
+            <img
+            class="guide-card__image"
+            src="img/ann-leroy-foto.jpg"
+            alt="Ann Leroy"
+          />
           <h3 class="guide-card__name">Ann Leroy</h3>
           <p class="guide-card__experience">
             Tour Operator, 6 years of experience
           </p>
+          </div>
+          
           <p class="guide-card__title">
             Ann joined the staff of Cilantro in 2012. She is an expert tour
             guide. She knows all the gems and the best sights to discover in
             France.
           </p>
-          <p class="guide-card__experience">
-            Languages: English, French, German
-          </p>
-          <div class="card__brands-container">
-            <a href="https://facebook.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://instagram.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
+          <div class="guide-card__header-footer">
+            <p class="guide-card__experience">
+              Languages: English, French, German
+            </p>
+            <div class="card__brands-container">
+              <a
+                href="https://facebook.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://instagram.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://youtube.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
           </div>
+          
         </div>
         <div class="guide-card">
-          <img class="guide-card__image" src="img/paul-rouge-foto.jpg" alt="Ann Leroy" />
+          <div class="guide-card__header-footer">
+            <img
+            class="guide-card__image"
+            src="img/paul-rouge-foto.jpg"
+            alt="Paul Rouge"
+          />
           <h3 class="guide-card__name">Paul Rouge</h3>
           <p class="guide-card__experience">
             Senior Tour Agent, 10 years of experience
           </p>
+          </div>            
           <p class="guide-card__title">
-            Paul is our licensed senior tour agent with more than 10 years of
-            travel industry experience under his belt.
+            Paul is our licensed senior tour agent with more than 10 years of travel industry experience under his belt.
           </p>
-          <p class="guide-card__experience">
-            Languages: English, French, Italian
-          </p>
-          <div class="social-links">
-            <a href="https://facebook.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://instagram.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
+          <div class="guide-card__header-footer">
+            <p class="guide-card__experience">
+              Languages: English, French, Italian
+            </p>
+            <div class="card__brands-container">
+              <a
+                href="https://facebook.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://instagram.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://youtube.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
           </div>
+          
         </div>
         <div class="guide-card">
-          <img class="guide-card__image" src="img/joyce-buckland-foto.jpg" alt="Ann Leroy" />
+          <div class="guide-card__header-footer">
+            <img
+            class="guide-card__image"
+            src="img/joyce-buckland-foto.jpg"
+            alt="Joyce Buckland"
+          />
           <h3 class="guide-card__name">Joyce Buckland</h3>
           <p class="guide-card__experience">
             Tour Guide, 4 years of experience
           </p>
-          <p class="guide-card__title">
-            Joyce joined our team as a travel guide. She is always very
-            friendly and attentive to clients to help them get a memorable
-            travel experience.
-          </p>
-          <p class="guide-card__experience">Languages: English, French</p>
-          <div class="social-links">
-            <a href="https://facebook.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://instagram.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com/" target="blank" class="brand topbar__brand">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
           </div>
+          
+          <p class="guide-card__title">
+            Joyce joined our team as a travel guide. She is always very friendly and attentive to clients to help them get a memorable travel experience.
+          </p>
+          <div class="guide-card__header-footer">
+            <p class="guide-card__experience">
+              Languages: English, French
+            </p>
+            <div class="card__brands-container">
+              <a
+                href="https://facebook.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://instagram.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://youtube.com/"
+                target="blank"
+                class="brand topbar__brand"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>
@@ -196,74 +267,84 @@
       </div>
     </section>
 
-    <!--Olesya Donskova-->
-    <section class="profesional_travel_planing">
-      <h2 class="profesional_travel_title"> Profecional travel planing</h2>
+   <!--Olesya Donskova-->
+   <section class="travel_planing">
+    
+    <h2 class="profesional_travel_title"> Profecional travel planing</h2>
 
-      <div class="text_planning">
-        <img width="410" src="img/case.jpeg" alt="case">
-        <p>If you are planning a trip to France, Cilantro is the best choice. Whether it's your first time in France or
-          the 20th, there is always something special to discover. Each of France province has its own must-see
-          peculiarities. Just specify the region you prefer to visit and one of our expert travel guides will provide
-          you with a well-thought-out vacation plan. Book your trip and enjoy the amazing Paris experience!</p>
+    <div class="text_planning">
+      <div class="container">
+      <img src="img/case.jpeg" alt="case">
+      <p>If you are planning a trip to France, Cilantro is the best choice. Whether it's your first time in France or
+        the 20th, there is always something special to discover. Each of France province has its own must-see
+        peculiarities. Just specify the region you prefer to visit and one of our expert travel guides will provide
+        you with a well-thought-out vacation plan. Book your trip and enjoy the amazing Paris experience!</p>
 
-        <div class="text_about_compani">
-          <img width="36" src="icon/navigator.png" alt="navigator">
-          <h3> What we offer</h3>
-          <p>We offer hundreds of sightseeing tours and custom packages which can meet any taste and budget. </p>
-
-          <img width="56" src="icon/star.png" alt="star">
-          <h3> Our experience</h3>
-          <p>Each of our travel specialists meets first-class industry standards and has at least 4.5 out of
-            5-star
-            rating. </p>
-
-          <img width="36" src="icon/like.png" alt="like">
-          <h3>Satisfaction guaranteed</h3>
-          <p> Our experienced travel agents guarantee each client the most enjoyable and memorable experience.</p>
+      <div class="text_compani">
+        <div class="container_icon">
+        <img src="img/navigator.png" alt="navigator">
+        </div>
+        <div class="text">
+        <h3> What we offer</h3>
+        <p>We offer hundreds of sightseeing tours and custom packages which can meet any taste and budget. </p>
+        </div>
+        <div class="container_icon">
+        <img  src="img/star.png" alt="star">
+        </div>
+        <div class="text">
+        <h3> Our experience</h3>
+        <p>Each of our travel specialists meets first-class industry standards and has at least 4.5 out of
+          5-star
+          rating. </p>
+        </div>
+        <div class="container_icon">
+        <img src="img/like.png" alt="like">
+        </div>
+        <div class="text">
+        <h3>Satisfaction guaranteed</h3>
+        <p> Our experienced travel agents guarantee each client the most enjoyable and memorable experience.</p>
         </div>
       </div>
-
-    </section>
+    </div>
+  </div>
+  </gred>
+  </section>
 
 
     <!--Yuliia Dulyba-->
-    |<section class="Popular-tours">
-      <div class="Popular-tours_recommended">
+    |<section class="popular-tours">
+      <div class="popular-tours_recommended">
         <h2> Recommended by</h2>
         <div class="recommended_by">
-          <img width="100" src="img/trip_owl.png" alt="OWL">
+          <img class="recommended_logo" src="img/trip_owl.png" alt="OWL">
           <br>
-          <img width="100" src="img/booking.png" alt="booking_logo">
+          <img class="recommended_logo" src="img/booking.png" alt="booking_logo">
           <br>
-          <img width="100" src="img/ryanair.jpeg" alt="ryanair_logo">
+          <img class="recommended_logo" src="img/ryanair.jpeg" alt="ryanair_logo">
         </div>
       </div>
       <h2> Popular tours</h2>
       <div class="popular-tours_cards">
         <article>
-          <img width="300" src="img/eiffel.jpg" alt="Eiffel Tower">
+          <img class="popular-tours_photos" width="300" src="img/eiffel.jpg" alt="Eiffel Tower">
           <p>1,200$</p>
           <h3>3-Day Paris Vacation Budget Package</h3>
           <p>September 22-25, 2022</p>
         </article>
-        <br>
         <article>
-          <img width="300" src="img/mountain.jpg" alt="Mountain_nature">
+          <img class="popular-tours_photos" width="300" src="img/mountain.jpg" alt="Mountain_nature">
           <p>1,400$</p>
           <h3>2-Day Burgundy Culture and Wine</h3>
           <p>September 28-30, 2022</p>
         </article>
-        <br>
         <article>
-          <img width="300" src="img/architecture_horse.jpg" alt="Architecture_horse">
+          <img class="popular-tours_photos" width="300" src="img/architecture_horse.jpg" alt="Architecture_horse">
           <p>270$</p>
           <h3>Versailles and Giverny Day Trip</h3>
           <p>September 11, 2022</p>
         </article>
-        <br>
         <article>
-          <img width="300" src="img/architecture_france.jpg" alt="Architecure_place">
+          <img class="popular-tours_photos" width="300" src="img/architecture_france.jpg" alt="Architecure_place">
           <p>2,200$</p>
           <h3>5-Day Paris Charming Package</h3>
           <p>October 1-5, 2022</p>
@@ -363,20 +444,18 @@
         <a class="find_tour-booking" href="#Contacts">Book a tour</a>
       </div>
 
-</html>
 
 <!-- Viktoriia Rychenko -->
 <section class="latest-on-instagram">
   <h2 class="latest-on-instagram__h2">Latest on Instagram</h2>
-  <div class="latest-on-instagram__images">
-    <a href="#"><img src="img/castle.jpg" width="250" alt="Castle image" class="images__image" /></a>
-    <a href="#"><img src="img/town_cafe.jpeg" width="250" alt="Town cafe image" class="images__image" /></a>
-    <a href="#"><img src="img/beautiful_road.jpg" width="250" alt="Beautiful road image" class="images__image" /></a>
-    <br />
-    <a href="#"><img src="img/castle_on_the_river.jpg" width="250" alt="Castle on the river image"
+  <div class="latest-on-instagram__images instagram-images__row">
+      <a href="#"><img src="img/castle.jpg" alt="Castle image" class="images__image" /></a>
+      <a href="#"><img src="img/town_cafe.jpeg" alt="Town cafe image" class="images__image" /></a>
+      <a href="#"><img src="img/beautiful_road.jpg" alt="Beautiful road image" class="images__image" /></a> 
+      <a href="#"><img src="img/castle_on_the_river.jpg" alt="Castle on the river image"
         class="images__image" /></a>
-    <a href="#"><img src="img/louvre.jpg" width="250" alt="Louvre image" class="images__image" /></a>
-    <a href="#"><img src="img/city_view.jpg" width="250" alt="City view image" class="images__image" /></a>
+      <a href="#"><img src="img/louvre.jpg" alt="Louvre image" class="images__image" /></a>
+      <a href="#"><img src="img/city_view.jpg" alt="City view image" class="images__image" /></a>
   </div>
 </section>
 

@@ -5,10 +5,79 @@
 .header__topbar {
     background-color: var(--main-color);
     font-family: var(--font-formal);
-    padding: 0 11vw;
+    padding: 0 3.5vw;
 }
 
-@media (min-width: 600px) {
+.burger__menu-icon {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+}
+
+.burger__line {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 2px;
+    width: 25px;
+    background-color: var(--white-color);
+    transition: 300ms;
+}
+
+.burger__menu-icon:hover {
+    cursor: pointer;
+}
+.burger__menu-icon:hover .burger__line{
+    background-color: var(--light-paragraph-color);
+}
+
+.burger__menu-icon .line-top {
+    bottom: 4px;
+}
+.burger__menu-icon .line-bottom {
+    top: 4px;
+}
+
+.burger__menu-icon.active .line-middle{
+    transform: scale(0);
+}
+.burger__menu-icon.active .line-top {
+    transform: rotate(45deg);
+    top: 50%;
+}
+.burger__menu-icon.active .line-bottom {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+.topbar__nav {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__menu {
+    display: none;
+}
+
+.topbar__contacts {
+    display: none;
+}
+
+@media (min-width: 991px) {
+    .nav__menu {
+        display: block;
+    }
+
+    .burger__menu-icon {
+        display: none;
+    }
+
     .header__topbar>.topbar__contacts {
         padding: 10px 0px;
         display: flex;

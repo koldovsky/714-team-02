@@ -1,0 +1,33 @@
+.container{
+    padding: 0 5vw;
+    max-width: 1200px;
+    
+}
+.text_planning> .container> img {
+    width: 600px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.container_icon> img {
+width: 60px;
+margin: 60px;
+float: left;
+}
+.text_planning> .container> text{
+    padding-right: 0px;
+    text-align: justify;
+    
+    width: 100%;
+    }
+    .text_planning> .container> p {
+        width: 1000px;
+        text-align: justify;
+        margin: auto;
+        
+    }
+    
+    h2 {
+        text-align: center;
+        
+    }
