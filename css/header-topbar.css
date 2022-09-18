@@ -81,3 +81,9 @@
         align-items: center;
     }
 }
+
+@media (min-width: 1286px) {
+    .header__topbar {
+        padding: 0 12vw;
+    }
+}
