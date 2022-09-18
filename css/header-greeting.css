@@ -1,6 +1,5 @@
 .header__greeting-container {
     position: relative;
-    height: 783.6px;
     background: linear-gradient(var(--main-overlay-color), var(--main-overlay-color)),
         url(../img/header-background.webp);
     background-repeat: no-repeat;
@@ -10,7 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-height: 480px;
+    height: 720px;
     padding: 0 55px;
 }
 
@@ -21,13 +20,29 @@ h1.header__greeting {
     line-height: 60px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 420px) {
     .header__greeting-container {
-        max-height: 780px;
+        max-height: 600px;
+    }
+}
+
+@media (min-width: 490px) {
+    .header__greeting-container {
+        max-height: 540px;
+    }
+}
+
+@media (min-width: 640px) {
+    .header__greeting-container {
+        max-height: 480px;
     }
 }
 
 @media (min-width: 767px) {
+    .header__greeting-container {
+        max-height: 783.6px;
+    }
+
     h1.header__greeting {
         font-size: 76px;
         line-height: 76px;
