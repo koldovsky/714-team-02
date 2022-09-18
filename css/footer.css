@@ -72,6 +72,12 @@
     }
 }
 
+@media (min-width: 1286px) {
+    .footer__section {
+        margin: 0 8vw;
+    }
+}
+
 .footer .menu__item {
     color: var(--white-color);
 }
