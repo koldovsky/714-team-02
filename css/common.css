@@ -1,7 +1,6 @@
 /*Font Lato & Prata*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap");
 
-
 *,
 *::after,
 *::before {
@@ -26,6 +25,16 @@
   --phone-color: #877454;
   font-family: var(--font-informal);
   color: var(--main-color);
+}
+
+body.burger-active {
+  overflow-y: hidden;
+}
+
+@media (min-width: 991px) {
+  body.burger-active {
+    overflow-y: visible;
+  }
 }
 
 ul {
