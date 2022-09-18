@@ -18,3 +18,52 @@
     padding: 0px 0px 0px 0px;
     text-align: left;
 }
+
+@media (min-width: 500px) {
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../img/light-background-contacts.png);
+}
+}
+
+.contacts__title__small {
+    color: var(--main-color);
+    font-family: var(--font-informal);
+    font-size: 22px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    display: block;
+}
+.contacts__text__information {
+    color: var(--paragraph-color);
+    font-family: var(--font-formal);
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    display: block;
+}
+.contacts__phone,
+.contacts__email {
+    color: var(--phone-color);
+    font-family: var(--font-formal);
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+}
+.contacts__hours,
+.contacts__skype,
+.contacts__phone__email {
+    display: flex;
+    justify-content: space-between;
+   }
+
