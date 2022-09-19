@@ -1,0 +1,77 @@
+.cilantro's-tours {
+
+    text-align: left;
+    background-color: var (--white-color);
+    justify-content: center;
+
+}
+
+@media (min-width: 768px) {
+
+    .cilantro's-tours__cards {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .cilantro's-tours__cards {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+h2 {
+    color: var(--main-color);
+    font-family: var(--font-informal);
+    font-weight: 400;
+    font-size: 28px; 
+}
+
+h3 {
+    color: var(--main-color);
+    font-family: var(--font-informal);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.price {
+    color: #b2a385;
+    font-family: var(--font-formal);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text-content {
+    color: var(--paragraph-color);
+    font-family: var(--font-formal);
+    font-weight: 400;
+    font-size: 16px; 
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    max-width: px;
+}
+
+ .special offers {
+    background-color: rgb(246, 246, 244);
+    justify-content: center; 
+    text-align: left;
+    padding: 75px 0px 90px 0px;
+ }
+
+@media (min-width: 768px) {
+
+    .special-offers__cards {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+}
