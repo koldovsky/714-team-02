@@ -121,6 +121,9 @@
     background-color: var(--white-color);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .form__information {
@@ -131,11 +134,16 @@
     font-stretch: 100%;
     font-weight: 400;
     margin: 12px 0px 0px 0px;
-    padding: 11px 20px 11px 20px;
+    padding: 11px 20px 11px 0px;
     text-align: start;
     line-height: 20px;
     border-style: none;
     border-color: #4A868D;
+    min-width: 250px;
+    
+    
+    
+    
 
 }
 
@@ -155,8 +163,8 @@
     text-align: center;
     cursor: pointer;
     border-style: none;
-
     line-height: 38px;
+    min-width: 250px;
 }
 
 .form__information__button:hover {
