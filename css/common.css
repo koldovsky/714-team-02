@@ -25,6 +25,7 @@
   --phone-color: #877454;
   font-family: var(--font-informal);
   color: var(--main-color);
+  --contacts-field-color: #f7f7f7; 
 }
 
 body.burger-active {

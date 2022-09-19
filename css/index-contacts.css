@@ -127,7 +127,7 @@
 }
 
 .form__information {
-    background-color: #f7f7f7;
+    background-color: var(--contacts-field-color);
     color: var(--paragraph-color);
     font-family: var(--font-formal);
     font-size: 16px;
