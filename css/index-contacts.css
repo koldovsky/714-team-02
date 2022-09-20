@@ -8,6 +8,7 @@
     padding: 0px 0px 0px 0px;
     text-align: left;
 }
+
 .contacts__text {
     color: var(--phone-color);
     font-family: var(--font-informal);
@@ -15,6 +16,157 @@
     font-stretch: 100%;
     font-weight: 400;
     margin: 0px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    text-align: left;
+    line-height: 30px;
+}
+
+@media (min-width: 767px) {
+    .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contacts {
+    background-image: url(../img/light-background-contacts.png);
+    padding: 100px 0px 20px 90px;
+    line-height: 30px;
+}
+
+.contacts__title__small {
+    color: var(--main-color);
+    font-family: var(--font-informal);
+    font-size: 22px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     text-align: left;
+}
+
+.contacts__text__information {
+    color: var(--paragraph-color);
+    font-family: var(--font-formal);
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.contacts__link {
+    color: var(--phone-color);
+    font-family: var(--font-formal);
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.contacts__link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 767px) {
+
+    .contacts__hours,
+    .contacts__skype,
+    .contacts__phone__email {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contacts__all {
+    padding: 40px 0px 0px 0px;
+}
+
+.contacts__hours,
+.contacts__skype,
+.contacts__phone__email {
+    padding: 30px 0px 0px 0px;
+}
+
+.contacts__information {
+    padding: 0px 0px 100px 0px;
+}
+
+#contacts__brand__f,
+#contacts__brand__i,
+#contacts__brand__y {
+    border: 1px solid var(--main-color);
+}
+
+#contacts__brand__link__f,
+#contacts__brand__link__i,
+#contacts__brand__link__y {
+    color: var(--main-color);
+}
+
+#contacts__brand__f:hover,
+#contacts__brand__i:hover,
+#contacts__brand__y:hover {
+    background-color: var(--main-color);
+}
+
+#contacts__brand__link__f:hover,
+#contacts__brand__link__i:hover,
+#contacts__brand__link__y:hover {
+    color: var(--white-color);
+}
+
+.form__contacts {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form__information {
+    background-color: var(--contacts-field-color);
+    color: var(--paragraph-color);
+    font-family: var(--font-formal);
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 12px 0px 0px 0px;
+    padding: 11px 20px 11px 0px;
+    text-align: start;
+    line-height: 20px;
+    border-style: none;
+    border-color: #4A868D;
+    min-width: 250px;
+    
+    
+    
+    
+
+}
+
+#information__message {
+    height: 150px;
+}
+
+.form__information__button {
+    color: var(--white-color);
+    font-family: var(--font-informal);
+    background-color: var(--main-color);
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    cursor: pointer;
+    border-style: none;
+    line-height: 38px;
+    min-width: 250px;
+}
+
+.form__information__button:hover {
+    background-color: var(--main-overlay-color);
 }

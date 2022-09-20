@@ -1,7 +1,6 @@
 /*Font Lato & Prata*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap");
 
-
 *,
 *::after,
 *::before {
@@ -11,6 +10,7 @@
 }
 
 :root {
+  --header-link-button-hover-color: #cddfe6;
   --font-informal: "Prata", serif;
   --font-formal: "Lato", sant-serif;
   --main-color: #192b42;
@@ -20,10 +20,22 @@
   --light-paragraph-color: #81888d;
   --brand-color: #b2a385;
   --brand-size: 25px;
-  --brand-gap: 10px;
+  --brand-icon-size: 13px;
+  --brand-gap: 15px;
   --phone-color: #877454;
   font-family: var(--font-informal);
   color: var(--main-color);
+  --contacts-field-color: #f7f7f7; 
+}
+
+body.burger-active {
+  overflow-y: hidden;
+}
+
+@media (min-width: 991px) {
+  body.burger-active {
+    overflow-y: visible;
+  }
 }
 
 ul {
@@ -34,6 +46,7 @@ a {
   text-decoration: none;
   outline: none;
 }
+
 a:hover,
 input[type="submit"]:hover {
   cursor: pointer;
@@ -62,15 +75,20 @@ p {
   color: var(--brand-color);
 }
 
+.brands-container {
+  display: flex;
+}
+
 .brand {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   border: 1px solid var(--brand-color);
+  min-width: var(--brand-size);
   width: var(--brand-size);
   height: var(--brand-size);
-  text-align: center;
-  line-height: var(--brand-size);
-  font-size: calc(var(--brand-size) / 2);
+  font-size: var(--brand-icon-size);
   background-color: transparent;
   transition-duration: 400ms;
 }
@@ -80,6 +98,7 @@ p {
 }
 
 .brand i {
+  display: block;
   color: var(--brand-color);
   transition-duration: 200ms;
 }
@@ -92,6 +111,6 @@ p {
   color: var(--white-color);
 }
 
-.cilantros-facts{
+.cilantros-facts {
   display: block;
 }

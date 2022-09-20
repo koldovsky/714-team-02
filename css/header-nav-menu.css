@@ -1,0 +1,64 @@
+.nav__menu {
+    display: none;
+}
+
+.header__topbar.burger-active .nav__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__menu .menu__item {
+    position: relative;
+    color: var(--white-color);
+    transition: none;
+}
+
+.nav__menu .menu__item:hover {
+    color: var(--brand-color);
+}
+
+.header__topbar.burger-active .nav__menu .menu__item {
+    margin: 10px 0;
+}
+
+.header__topbar.burger-active .nav__menu .menu__item:not(:last-child) {
+    margin-right: 0;
+}
+
+@media (min-width: 991px) {
+    .nav__menu {
+        display: block;
+    }
+
+    .header__topbar.burger-active .nav__menu,
+    .nav__menu.burger-active {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .nav__menu .menu__item:not(:last-child),
+    .header__topbar.burger-active .nav__menu .menu__item:not(:last-child) {
+        margin-right: 18px;
+    }
+
+    .nav__menu .menu__item:hover::after {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 2px;
+        width: 72%;
+        background-color: var(--brand-color);
+    }
+}
+
+.topbar__brands-container .topbar__brand:hover {
+    background-color: var(--brand-color);
+}
+
+.topbar__brands-container .topbar__brand:hover i {
+    color: var(--main-color);
+}

@@ -1,8 +1,14 @@
 @import url(common.css);
-@import url(header.css);
+@import url(burger-menu.css);
+@import url(header-nav-menu.css);
+@import url(header-topbar.css);
+@import url(header-greeting.css);
 @import url(guides.css);
 @import url(footer.css);
 @import url(gallery.css);
 @import url(index-blog.css);
 @import url(index-contacts.css);
 @import url(facts.css);
+@import url(planing.css);
+@import url(tours.css);
+@import url(popular.css);

@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency Cilantro</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/travel_agency_favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/travel_agency_favicon.png" />
     <link rel="stylesheet" type="text/css" href="libs/fontawesome/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <script type="text/javascript" src="js/burger.js" defer></script>
 </head>
 
 <body>
     <!-- Maxym Hevyk -->
     <header class="header">
         <div class="header__section header__topbar">
-            <div class="topbar__contacts">
+            <div class="topbar__section topbar__contacts">
                 <div class="phone-container contacts__phone-container">
                     <span>Phone:</span>
                     <a class="phone contacts__phone" href="tel:12345678900">+1 (234) 567 89 00</a>
@@ -32,13 +34,19 @@
                     </a>
                 </div>
             </div>
-            <nav class="nav topbar__nav">
+            <nav class="nav topbar__section topbar__nav">
                 <div class="logo-container nav__logo-container">
                     <a href="." class="logo nav__logo">Cilantro</a>
                 </div>
-                <div class="menu nav__menu">
+                <div class="burger__menu-icon" title="Switch menu">
+                    <span class="burger__line line-top"></span>
+                    <span class="burger__line line-middle"></span>
+                    <span class="burger__line line-bottom"></span>
+                </div>
+                <div id="header-menu" class="menu nav__menu">
                     <a href="tours.html" class="menu__item">Tours</a>
                     <a href="#aboutus" class="menu__item">About us</a>
+                    <a href="#reviews" class="menu__item">Reviews</a>
                     <a href="gallery.html" class="menu__item">Gallery</a>
                     <a href="#faq" class="menu__item">FAQ</a>
                     <a href="#contacts" class="menu__item">Contacts</a>
@@ -52,27 +60,27 @@
             <h2 class="gallery__h2">Gallery</h2>
             <div class="gallery__cards">
                 <article class="card">
-                    <img class="card__image" src="img/royal_palace_madrid.jpg" width="300" alt="Paris tour image">
+                    <img class="card__image" src="img/royal_palace_madrid.jpg" alt="Paris tour image">
                     <h4 class="gallery__h4">Paris in spring</h4>
                 </article>
                 <article class="card">
-                    <img class="card__image" src="img/luara_castle.jpeg" width="300" alt="Burgundy tour image">
+                    <img class="card__image" src="img/luara_castle.jpeg" alt="Burgundy tour image">
                     <h4 class="gallery__h4">Burgundy culture and wine</h4>
                 </article>
                 <article class="card">
-                    <img class="card__image" src="img/hungarian_parliament.jpeg" width="300" alt="Budapest tour image">
+                    <img class="card__image" src="img/hungarian_parliament.jpeg" alt="Budapest tour image">
                     <h4 class="gallery__h4">Budapest parliament guided tours</h4>
                 </article>
                 <article class="card">
-                    <img class="card__image" src="img/torre_de_belem.jpeg" width="300" alt="Normandy tour image">
+                    <img class="card__image" src="img/torre_de_belem.jpeg" alt="Normandy tour image">
                     <h4 class="gallery__h4">Normandy Tour</h4>
                 </article>
                 <article class="card">
-                    <img class="card__image" src="img/paris_seine.jpg" width="300" alt="Paris in autumn tour image">
+                    <img class="card__image" src="img/paris_seine.jpg" alt="Paris in autumn tour image">
                     <h4 class="gallery__h4">Paris in autumn</h4>
                 </article>
                 <article class="card">
-                    <img class="card__image" src="img/gothic_buildings.jpg" width="300" alt="Paris tour image">
+                    <img class="card__image" src="img/gothic_buildings.jpg" alt="Paris tour image">
                     <h4 class="gallery__h4">Charming Paris tour</h4>
                 </article>
             </div>
@@ -81,25 +89,27 @@
 
     <footer class="footer">
         <div class="footer__section footer__sitemap">
-            <div class="logo-container sitemap__logo-container">
-                <a href="." class="logo sitemap__logo">Cilantro</a>
+            <div class="sitemap__column sitemap__contacts">
+                <div class="logo-container sitemap__logo-container">
+                    <a href="." class="logo sitemap__logo">Cilantro</a>
+                </div>
+                <div class="phone-container sitemap__phone-container">
+                    <span>Phone:</span>
+                    <a class="phone sitemap__phone" href="tel:12345678900">+1 (234) 567 89 00</a>
+                </div>
             </div>
-            <div class="phone-container sitemap__phone-container">
-                <span>Phone:</span>
-                <a class="phone sitemap__phone" href="tel:12345678900">+1 (234) 567 89 00</a>
-            </div>
-            <div class="menu sitemap__menu">
-                <a href="#tours" class="menu__item">Tours</a>
-                <a href="#aboutus" class="menu__item">About us</a>
+            <div class="sitemap__column menu sitemap__menu">
+                <a href="tours.html" class="menu__item">Tours</a>
+                <a href="#aboutus" class="menu__item">Reviews</a>
                 <a href="#faq" class="menu__item">FAQ</a>
             </div>
-            <div class="menu sitemap__menu">
+            <div class="sitemap__column menu sitemap__menu">
                 <a href="#aboutus" class="menu__item">About us</a>
                 <a href="gallery.html" class="menu__item">Gallery</a>
                 <a href="#contacts" class="menu__item">Contacts</a>
             </div>
-            <div class="sitemap__follow-us">
-                <span>Follow us</span>
+            <div class="sitemap__column sitemap__follow-us">
+                <p class="follow-us__text">Follow Us</p>
                 <div class="brands-container footer__brands-container">
                     <a href="https://facebook.com/" target="blank" class="brand footer__brand">
                         <i class="fa-brands fa-facebook-f"></i>
@@ -114,11 +124,11 @@
             </div>
         </div>
         <div class="footer__section footer__copyright">
-            <span class="copyright__developers">
+            <p class="copyright__developers">
                 &copy; Created by:
-                <strong>team 2</strong>
-            </span>
-            <span class="copyright__policy">All rights Reserved</span>
+                <strong>team #2</strong>
+            </p>
+            <p class="copyright__policy">All rights Reserved</p>
         </div>
     </footer>
 </body>
