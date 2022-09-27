@@ -1,0 +1,28 @@
+.latest-on-instagram {
+    display: grid;
+    place-items: center;
+    background-color: var(--main-color);
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 90px;
+  }
+  
+  .latest-on-instagram__h2 {
+    color: var(--white-color);
+    font-family: var(--font-informal);
+    font-weight: 400;
+  }
+
+  .images__image {
+    width: 100%;
+    height: auto;
+    max-width: 440px;
+  }
+
+  .latest-on-instagram__images {
+    display: grid;
+    place-items: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
