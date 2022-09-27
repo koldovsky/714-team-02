@@ -19,8 +19,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px;
-  margin: auto;
 }
 
 .guide-card {
@@ -131,8 +129,7 @@
   color: var(--white-color);
 }
 
-.membership {
-  background-color: rgb(206, 200, 200);
+.membership__container {
   display: flex;
   flex-direction: column;
   align-items: center;
