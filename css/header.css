@@ -1,0 +1,91 @@
+.header {
+    color: var(--white-color);
+}
+
+.header__topbar {
+    background-color: var(--main-color);
+    font-family: var(--font-formal);
+}
+@media (min-width: 600px){
+    .header__topbar{
+        padding: 0 6.5vw;
+    }
+    .header__topbar > .topbar__contacts{
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .topbar__nav{
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header .nav__logo {
+    color: var(--white-color);
+    font-size: 32px;
+    font-family: var(--font-informal);
+}
+
+.header .topbar__brand:hover {
+    background-color: var(--brand-color);
+}
+
+.header .topbar__brand:hover i {
+    color: var(--main-color);
+}
+
+.header .menu__item {
+    position: relative;
+    color: var(--white-color);
+    transition: none;
+}
+.header .menu__item:not(:last-child){
+    margin-right: 20px;
+}
+
+.header .menu__item:hover {
+    color: var(--brand-color);
+}
+
+.header .menu .menu__item:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 2px;
+    width: 72%;
+    background-color: var(--brand-color);
+}
+
+.header__greeting-container {
+    position: relative;
+    height: 783.6px;
+    background: linear-gradient(var(--main-overlay-color), var(--main-overlay-color)), url(../img/header-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 55px;
+}
+
+h1.header__greeting {
+    font-size: 92px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 92px;
+}
+
+.header__link-button {
+    margin-top: 50px;
+    font-size: 17.6px;
+    padding: 12px 22.5px;
+    background-color: var(--white-color);
+    color: var(--main-color);
+}

@@ -1,52 +1,111 @@
 .cilantros-facts{
-    background-color: #192b42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
     color: var(--white-color);    
-    line-height: 4em;
+    line-height: 2em;
 
 }
 
-.cilantros-facts-img{
-    float: left;
-    width: 50%;
-    height: auto;
-    width: 474;
+.cilantros-facts__img{
+    width: 75%;
+    margin: 30px 40px; 
+    padding-bottom: 170px;
 }
 
-.cilantros-facts-header{
-    position: relative;
-    top: 15px;
-    left: 15px;
-    font-size: 29px;
-    font-family: Prata,serif;
-    font-weight: 400;
-    line-height: 3em;
+@media(min-width:768px) {
+    .cilantros-facts{
+        flex-direction: row;
+    }
+    .cilantros-facts__img{
+        width: 45%;
+        margin: 40px 50px;
+    }
 }
 
-.cilantros-facts-container{
-    position: relative;
-    left: 35px;
+.cilantros-icon__list{
+   display: flex;
+   flex-direction: column;
+   margin: 50px 0;
 }
 
-.facts-icon{
-    position: relative;
-    right: 10px;
-    color:  #b2a385;
-    background-color: #fff;
-    background-size: 50ch;
-    border-radius: 50%;
-}
 
-.find_tour-booking{
-    position: relative;
-    bottom: 350px;
-    left: 570px;
-    background-color: #fff;
-    color: black;
-  
-}
-
-.find_tour-header{
-    position: relative;
-    top: 350px;
+.fa-headset{
+    padding-top: 12px;
     text-align: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--brand-color);
+    background-color: #fff;
+    color: var( --brand-color);
+}
+
+.fa-plane-arrival{
+    padding-top: 12px;
+    text-align: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--brand-color);
+    background-color: #fff;
+    color: var( --brand-color);
+}
+
+.fa-face-laugh-beam{
+    padding-top: 12px;
+    text-align: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--brand-color);
+    background-color: #fff;
+    color: var( --brand-color);
+}
+
+.fa-earth-europe{
+    padding-top: 12px;
+    text-align: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--brand-color);
+    background-color: #fff;
+    color: var( --brand-color);
+}
+
+.fa-headset_list{
+   color: var(--white-color); 
+   font-size: 22px;
+}
+   
+
+.book-perfect__tour{
+    background-image: url("../img/guides-background.png");
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 0% auto;
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+.book-pefect__tour-header{
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    padding: 30px 60px;
+    color: var(--white-color);
+}
+
+.book-perfect__tour-button{
+    position: relative;
+    font-size: 16.6px;
+    padding: 12px 22.5px;
+    background-color: var(--white-color);
+    color: var(--main-color);
 }
