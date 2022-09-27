@@ -141,6 +141,12 @@
   align-items: center;
 }
 
+.slider__carousel-membership {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .membership-logo {
   width: 15%;
 }
