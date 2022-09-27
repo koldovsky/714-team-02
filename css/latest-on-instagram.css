@@ -1,6 +1,5 @@
+
 .latest-on-instagram {
-    display: grid;
-    place-items: center;
     background-color: var(--main-color);
     text-align: center;
     padding-top: 75px;
@@ -11,6 +10,9 @@
     color: var(--white-color);
     font-family: var(--font-informal);
     font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
   }
 
   .images__image {
@@ -21,8 +23,16 @@
 
   .latest-on-instagram__images {
     display: grid;
-    place-items: center;
     justify-content: space-around;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 2em;
+    margin-top: 45px;
+    padding: 0 24px;
   }
+
+  @media (min-width: 991px) {
+    .latest-on-instagram__images {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    
