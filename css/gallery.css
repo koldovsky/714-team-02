@@ -1,5 +1,9 @@
   .gallery {
-    display: grid;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     background-color: var(--white-color);
   }
 
@@ -22,9 +26,10 @@
     max-width: 440px;
   }
 
-  .gallery__cards {
-    display: flex;
-    flex-wrap: wrap;
+  .gallery .gallery__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+    gap: 1em;
     margin: auto;
   }
