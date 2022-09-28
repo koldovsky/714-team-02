@@ -5,7 +5,7 @@
 
 .container__blog__cards {
     text-align: left;
-    padding: 0px 75px 0px 75px;
+    padding: 0px 0px 70px 0px;
 }
 
 @media (min-width: 767px) {
@@ -23,7 +23,7 @@
 }
 
 .blog__cards {
-    padding: 30px 15px 0px 15px;
+    padding: 30px 15px 60px 15px;
     margin: 0px 0px 0px 0px;
 }
 
@@ -45,7 +45,7 @@
     font-stretch: 100%;
     font-weight: 400;
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 25px 0px 0px 0px;
 }
 
 .blog__cards__title {
@@ -55,7 +55,7 @@
     font-stretch: 100%;
     font-weight: 400;
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 .blog__cards__link {
@@ -66,8 +66,8 @@
     font-stretch: 100%;
     font-weight: 400;
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    text-align: center;
+    padding: 20px 0px 0px 0px;
+    
 }
 
 .blog__cards__link:hover {

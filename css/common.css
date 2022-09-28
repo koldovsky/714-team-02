@@ -26,6 +26,7 @@
   font-family: var(--font-informal);
   color: var(--main-color);
   --contacts-field-color: #f7f7f7; 
+  --contacts-field-line-color: rgb(0, 174, 255);
 }
 
 body.burger-active {
