@@ -1,16 +1,5 @@
-.latest-on-instagram {
-    background-color: var(--main-color);
-    text-align: center;
-    padding: 10px 0 80px 0;
-  }
-  
-  .latest-on-instagram__h2 {
-    color: var(--white-color);
-    font-family: var(--font-informal);
-    font-weight: 400;
-  }
-
   .gallery {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,24 +20,16 @@
     font-size: 16px;
   }
 
-  .images__image, .card__image {
-    margin: 10px;
+  .card__image {
     width: 100%;
     height: auto;
     max-width: 440px;
   }
-  
-  .latest-on-instagram__images {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-  }
 
-  .gallery__cards {
-    display: flex;
-    flex-wrap: wrap;
+  .gallery .gallery__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+    gap: 1em;
     margin: auto;
   }
