@@ -10,5 +10,17 @@
         headerTopbar.classList.toggle(burgerToggleClassName);
     }
 
+    //hides burger if it is active and page is scrolled down
+    function hideBurgerAfterScroll() {
+        const isBurgerActive = body.classList.contains(burgerToggleClassName);
+        const currentScroll = document.documentElement.scrollTop || body.scrollTop;
+
+        if(isBurgerActive && currentScroll > 0){
+            body.classList.remove(burgerToggleClassName);
+            headerTopbar.classList.remove(burgerToggleClassName);
+        }
+    }
+
     burgerIcon.addEventListener("click", toggleBurgerMenu);
+    window.addEventListener("scroll", hideBurgerAfterScroll);
 })();
