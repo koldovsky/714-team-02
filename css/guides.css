@@ -152,15 +152,27 @@
   width: 15%;
 }
 
-
-.timer-container, .timer__title {
+.timer-container,
+.timer__title {
   color: yellow;
   text-align: center;
   background-color: blue;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
-.timer-war, .timer-crimea {
+
+.timer__title-crimea {
+
+  text-align: center;
+ 
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.timer-war,
+.timer-crimea {
   display: flex;
   text-align: center;
   margin: auto;
