@@ -1,0 +1,42 @@
+.reviews__container {
+    margin: 0 24px;
+}
+
+.words-of-gratitude__title {
+    text-align: center;
+}
+
+.reviews-words-of-gratitude .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.reviews__words-of-gratitude .reviews__card {
+    display: flex;
+}
+
+.reviews__words-of-gratitude .reviews__card :not(:first-child) {
+    font-family: var(--font-formal);
+}
+
+.card__text .card__quote {
+    color: var(--paragraph-color);
+}
+.card__quote::before, .card__quote::after {
+    content: '"';
+}
+
+.reviews__card .reviews__card-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 26.478%;
+}
+
+@media (min-width: 760px) {
+    .reviews__card .reviews__card-image img {
+        width: 170px;
+        height: 170px;
+    }
+}
