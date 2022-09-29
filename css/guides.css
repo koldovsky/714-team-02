@@ -102,6 +102,7 @@
 .restaurant-guide {
   background-color: var(--main-color);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -149,4 +150,42 @@
 
 .membership-logo {
   width: 15%;
+}
+
+.timer-container,
+.timer__title {
+  color: yellow;
+  text-align: center;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.timer__title-crimea {
+
+  text-align: center;
+ 
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.timer-war,
+.timer-crimea {
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+.war__time {
+  margin: 10px;
+}
+
+.timer-container-crimea {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -343,7 +343,51 @@
               value="Get a guide"
             />
           </form>
-        </div>
+        </div>        
+      </section>
+      <section class="timer-container">
+        <h2 class="timer__title">War in Ukraine</h2>
+        <h5 class="timer__title">(24 лютого 2022)</h5>
+        <div class="timer-war">
+          <div class="war__time">
+            <div id="time__days"></div>
+            <div>days</div>
+          </div>
+          <div class="war__time">
+            <div id="time__hour"></div>
+            <div>hour</div>
+          </div>
+          <div class="war__time">
+            <div id="time__minutes"></div>
+            <div>minutes</div>
+          </div>
+          <div class="war__time">
+            <div id="time__seconds"></div>
+            <div>seconds</div>
+          </div>
+        </div>          
+      </section>
+      <section class="timer-container-crimea">
+        <h2 class="timer__title-crimea">Crimea is under occupation</h2>
+        <h5 class="timer__title-crimea">(18 березня 2014)</h5>
+        <div class="timer-crimea">
+          <div class="war__time">
+            <div id="crimea__days"></div>
+            <div>days</div>
+          </div>
+          <div class="war__time">
+            <div id="crimea__hour"></div>
+            <div>hour</div>
+          </div>
+          <div class="war__time">
+            <div id="crimea__minutes"></div>
+            <div>minutes</div>
+          </div>
+          <div class="war__time">
+            <div id="crimea__seconds"></div>
+            <div>seconds</div>
+          </div>
+        </div>          
       </section>
       <section class="membership">
         <div class="membership__container container">
@@ -401,6 +445,7 @@
 
       <!--Tetyana Zadvorna-->
       <section class="blog">
+        <div class="container">
         <h2 class="blog__title">From the Blog</h2>
         <div class="container__blog__cards">
           <article class="blog__cards">
@@ -426,9 +471,11 @@
             <a class="blog__cards__link" href="#">Learn more</a>
           </article>
         </div>
+        </div>
       </section>
       <section class="contacts">
-        <div class="contacts__information">
+        
+        <div class="contacts__information container">
           <h2 class="contacts__title">Contacts</h2>
           <p class="contacts__text">
             Feel free to contact us if you have any questions related to our
@@ -505,7 +552,7 @@
             </a>
           </div>
         </div>
-        <div class="form__contacts">
+        <div class="form__contacts container">
           <form
             class="form__information__all"
             action="https://formspree.io/f/meqdepnj"
@@ -558,7 +605,7 @@
             </ul>
           </form>
         </div>
-      </section>
+        </section>
     </main>
 
     <footer class="footer">
@@ -621,5 +668,6 @@
     </footer>
     <script src="js/guides.js"></script>
     <script src="js/membership-slider.js"></script>
+    <script src="js/war-timer.js"></script>
   </body>
 </html>

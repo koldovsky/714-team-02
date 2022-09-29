@@ -123,7 +123,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    min-width: 320px;
 }
 
 .form__information {
@@ -138,14 +138,16 @@
     text-align: start;
     line-height: 20px;
     border-style: none;
-    border-color: #4A868D;
+    border-color: var (--main-color);
     min-width: 250px;
+    border-radius: 2%;
     
-    
-    
-    
+       
 
 }
+.form__information:focus { 
+    outline: 2px solid var(--contacts-field-line-color); 
+}  
 
 #information__message {
     height: 150px;
