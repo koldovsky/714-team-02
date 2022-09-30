@@ -2,7 +2,6 @@
     .planning_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-bottom: 30px;
         gap: 15px;
     }
 }
@@ -24,7 +23,7 @@
 
 .text-planing_other>.planing_block {
     display: flex;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .planing_block>.text_image>h3 {
@@ -34,13 +33,12 @@
 
 .text-planind {
     text-align: justify;
-    padding-right: 100px;
-    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.case_foto>img {
+.case_foto> img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-
+    width: 80%;
+    height: 60%;
+    padding-left: 50px;
 }
