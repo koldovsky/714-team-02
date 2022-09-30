@@ -34,7 +34,7 @@
 
 .reviews__words-of-gratitude .reviews__card :not(:first-child) {
     font-family: var(--font-formal);
-    font-weight: 0;
+    font-weight: 100;
 }
 
 .reviews__words-of-gratitude .card__text {
