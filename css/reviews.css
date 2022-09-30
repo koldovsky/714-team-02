@@ -2,31 +2,62 @@
     margin: 0 24px;
 }
 
-.words-of-gratitude__title {
+.reviews__words-of-gratitude .words-of-gratitude__title {
     text-align: center;
+    font-weight: 300;
+    margin: 70px 15px 40px;
 }
 
-.reviews-words-of-gratitude .cards {
+.reviews__words-of-gratitude .words-of-gratitude__cards {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+@media (min-width: 767px) {
+    .reviews__words-of-gratitude .words-of-gratitude__cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .reviews__words-of-gratitude .reviews__card {
     display: flex;
+    background-color: var(--reviews-card-bg-color);
+    padding: 39px 50px;
 }
 
 .reviews__words-of-gratitude .reviews__card :not(:first-child) {
     font-family: var(--font-formal);
+    font-weight: 0;
 }
 
-.card__text .card__quote {
-    color: var(--paragraph-color);
+.reviews__words-of-gratitude .card__text {
+    margin-left: 15px;
 }
-.card__quote::before, .card__quote::after {
+
+.reviews__words-of-gratitude .card__short-description {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.reviews__words-of-gratitude .card__text .card__quote {
+    display: block;
+    text-align: justify;
+    line-height: 24px;
+    color: var(--paragraph-color);
+    margin-top: 30px;
+}
+
+.reviews__words-of-gratitude .card__quote::before,
+.reviews__words-of-gratitude .card__quote::after {
     content: '"';
 }
 
-.reviews__card .reviews__card-image img {
+.reviews__words-of-gratitude .card__date {
+    margin-top: 30px;
+}
+
+.reviews__words-of-gratitude .reviews__card-image img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -35,7 +66,7 @@
 }
 
 @media (min-width: 760px) {
-    .reviews__card .reviews__card-image img {
+    .reviews__words-of-gratitude .reviews__card-image img {
         width: 170px;
         height: 170px;
     }
