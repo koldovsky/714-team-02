@@ -1,5 +1,11 @@
 .reviews__container {
-    margin: 0 24px;
+    margin: 75px 24px 90px;
+}
+
+@media (min-width: 1200px) {
+    .reviews__container {
+        margin: 75px auto 90px;
+    }
 }
 
 .reviews__words-of-gratitude .words-of-gratitude__title {
