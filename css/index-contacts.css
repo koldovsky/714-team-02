@@ -25,6 +25,7 @@
     .contacts {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 5px;
     }
 }
 
@@ -123,7 +124,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 320px;
+    
+    padding: 75px 50px 75px 50px;
 }
 
 .form__information {
@@ -139,7 +141,7 @@
     line-height: 20px;
     border-style: none;
     border-color: var (--main-color);
-    min-width: 250px;
+   
     border-radius: 2%;
     
        
