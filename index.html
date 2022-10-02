@@ -1,77 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency Cilantro</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/favicon/travel_agency_favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="libs/fontawesome/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Agency Cilantro</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon/travel_agency_favicon.png">
-  <link rel="stylesheet" type="text/css" href="libs/fontawesome/all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/burger.js" defer></script>
+  </head>
 
-  <script src="js/burger.js" defer></script>
-</head>
-
-<body>
-  <!-- Maxym Hevyk -->
-  <header class="header">
-    <div class="header__section header__topbar">
-      <div class="topbar__section topbar__contacts">
-        <div class="phone-container contacts__phone-container">
-          <span>Phone:</span>
-          <a class="phone contacts__phone" href="tel:12345678900">+1 (234) 567 89 00</a>
+  <body>
+    <!-- Maxym Hevyk -->
+    <header class="header">
+      <div class="header__section header__topbar">
+        <div class="topbar__section topbar__contacts">
+          <div class="phone-container contacts__phone-container">
+            <span>Phone:</span>
+            <a class="phone contacts__phone" href="tel:12345678900"
+              >+1 (234) 567 89 00</a
+            >
+          </div>
+          <div class="brands-container topbar__brands-container">
+            <a
+              href="https://facebook.com/"
+              target="blank"
+              class="brand topbar__brand"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="blank"
+              class="brand topbar__brand"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://youtube.com/"
+              target="blank"
+              class="brand topbar__brand"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
         </div>
-        <div class="brands-container topbar__brands-container">
-          <a href="https://facebook.com/" target="blank" class="brand topbar__brand">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="https://instagram.com/" target="blank" class="brand topbar__brand">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://youtube.com/" target="blank" class="brand topbar__brand">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </div>
+        <nav class="nav topbar__section topbar__nav">
+          <div class="logo-container nav__logo-container">
+            <a href="." class="logo nav__logo">Cilantro</a>
+          </div>
+          <div class="burger__menu-icon" title="Switch menu">
+            <span class="burger__line line-top"></span>
+            <span class="burger__line line-middle"></span>
+            <span class="burger__line line-bottom"></span>
+          </div>
+          <div id="header-menu" class="menu nav__menu">
+            <a href="tours.html" class="menu__item">Tours</a>
+            <a href="#aboutus" class="menu__item">About us</a>
+            <a href="reviews.html" class="menu__item">Reviews</a>
+            <a href="gallery.html" class="menu__item">Gallery</a>
+            <a href="#faq" class="menu__item">FAQ</a>
+            <a href="#contacts" class="menu__item">Contacts</a>
+          </div>
+        </nav>
       </div>
-      <nav class="nav topbar__section topbar__nav">
-        <div class="logo-container nav__logo-container">
-          <a href="." class="logo nav__logo">Cilantro</a>
-        </div>
-        <div class="burger__menu-icon" title="Switch menu">
-          <span class="burger__line line-top"></span>
-          <span class="burger__line line-middle"></span>
-          <span class="burger__line line-bottom"></span>
-        </div>
-        <div id="header-menu" class="menu nav__menu">
-          <a href="tours.html" class="menu__item">Tours</a>
-          <a href="#aboutus" class="menu__item">About us</a>
-          <a href="reviews.html" class="menu__item">Reviews</a>
-          <a href="gallery.html" class="menu__item">Gallery</a>
-          <a href="#faq" class="menu__item">FAQ</a>
-          <a href="#contacts" class="menu__item">Contacts</a>
-        </div>
-      </nav>
-    </div>
-    <div class="header__section header__greeting-container">
-      <h1 class="header__greeting">
-        Your Perfect Tour in France Starts Here!
-      </h1>
-      <a class="link-button header__link-button" href="#bookatour">Book a tour</a>
-    </div>
-  </header>
-  <main>
-    <!--Yuliia Dulyba-->
-    <section class="popular-tours">
-      <div class="popular-tours_recommended">
-        <div class="recommended_by">
-          <h2>Recommended by</h2>
-          <img class="recommended_logo" src="img/trip_owl.png" alt="OWL">
-          <img class="recommended_logo" src="img/booking.png" alt="booking_logo">
-          <img class="recommended_logo" src="img/ryanair.jpeg" alt="ryanair_logo">
-        </div>
+      <div class="header__section header__greeting-container">
+        <h1 class="header__greeting">
+          Your Perfect Tour in France Starts Here!
+        </h1>
+        <a class="link-button header__link-button" href="#bookatour"
+          >Book a tour</a
+        >
       </div>
-      <h2>Popular tours</h2>
+    </header>
+    <main>
+      <!--Yuliia Dulyba-->
+      <section class="popular-tours">
+        <div class="popular-tours_recommended">
+          <div class="recommended_by">
+            <h2>Recommended by</h2>
+            <img class="recommended_logo" src="img/trip_owl.png" alt="OWL" />
+            <img
+              class="recommended_logo"
+              src="img/booking.png"
+              alt="booking_logo"
+            />
+            <img
+              class="recommended_logo"
+              src="img/ryanair.jpeg"
+              alt="ryanair_logo"
+            />
+          </div>
+        </div>
+        <!-- <h2>Popular tours</h2>
       <div class="popular-tours_cards">
         <article>
           <img class="popular-tours_photos" width="300" src="img/eiffel.jpg" alt="Eiffel Tower">
@@ -98,48 +129,48 @@
           <p>October 1-5, 2022</p>
         </article>
         <a href="tours" class="button"> All Tours</a>
-      </div>
-    </section>
+      </div> -->
+      </section>
 
-    <!--Dribko Tetiana-->
+      <!--Dribko Tetiana-->
 
-    <section class="cilantros-facts">
-      <img class="cilantros-facts__img" src="img/car.jpeg" alt="car">
-      <div>
-        <h2>Cilantro's facts</h2>
+      <section class="cilantros-facts">
+        <img class="cilantros-facts__img" src="img/car.jpeg" alt="car" />
         <div>
-          <ul class="cilantros-icon__list">
-            <li>
-              <i class="fa-solid fa-headset"></i>
-              <p class="fa-headset_list">13 years of experience</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-plane-arrival"></i>
-              <p class="fa-headset_list">2000+ enjoyable tours</p>
-            </li>
-            <li>
-              <i class="fa-regular fa-face-laugh-beam"></i>
-              <p class="fa-headset_list">10k satisfied clients</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-earth-europe"></i>
-              <p class="fa-headset_list">1,000,000+ km traveled</p>
-            </li>
-          </ul>
+          <h2>Cilantro's facts</h2>
+          <div>
+            <ul class="cilantros-icon__list">
+              <li>
+                <i class="fa-solid fa-headset"></i>
+                <p class="fa-headset_list">13 years of experience</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-plane-arrival"></i>
+                <p class="fa-headset_list">2000+ enjoyable tours</p>
+              </li>
+              <li>
+                <i class="fa-regular fa-face-laugh-beam"></i>
+                <p class="fa-headset_list">10k satisfied clients</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-earth-europe"></i>
+                <p class="fa-headset_list">1,000,000+ km traveled</p>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="book-perfect__tour">
-      <div>
-        <h3 class="book-pefect__tour-header">
-          Let us find you a perfect tour!
-        </h3>
-        <a class="book-perfect__tour-button" href="#contacts">Book a tour</a>
-      </div>
-    </section>
+      </section>
+      <section class="book-perfect__tour">
+        <div>
+          <h3 class="book-pefect__tour-header">
+            Let us find you a perfect tour!
+          </h3>
+          <a class="book-perfect__tour-button" href="#contacts">Book a tour</a>
+        </div>
+      </section>
 
-    <!--Denis Grabovec-->
-    <section class="words-of-gratitude">
+      <!--Denis Grabovec-->
+      <!-- <section class="words-of-gratitude">
       <h2>Words of gratitude</h2>
       <div class="workers__gratitude">
         <div class="worker__gratitude">
@@ -178,7 +209,7 @@
           <h4 class="worker__position">5-Day Paris Charming Package</h4>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="awards">
       <h2 class="awards__title">Awards</h2>
@@ -196,306 +227,488 @@
     <section class="travel_planing">
       <h2 class="profesional_travel_title">Profesional travel planing</h2>
 
-      <div class="planning_container">
-        <div class="case_foto">
-          <img src="img/case.jpeg" alt="case">
-        </div>
-
-        <div class="text-planind">
-          <div class="text-planing_text">
-            <p>
-              If you are planning a trip to France, Cilantro is the best
-              choice. Whether it's your first time in France or the 20th,
-              there is always something special to discover. Each of France
-              province has its own must-see peculiarities. Just specify the
-              region you prefer to visit and one of our expert travel guides
-              will provide you with a well-thought-out vacation plan. Book
-              your trip and enjoy the amazing Paris experience!
-            </p>
+        <div class="planning_container">
+          <div class="case_foto">
+            <img src="img/case.jpeg" alt="case" />
           </div>
-          <div class="text-planing_other">
-            <div class="planing_block">
-              <div class="icon_image">
-                <img class="icon_image" src="img/navigator.png" alt="navigator">
-              </div>
-              <div class="text_image">
-                <h3>What we offer</h3>
-                <p>
-                  We offer hundreds of sightseeing tours and custom packages
-                  which can meet any taste and budget.
-                </p>
-              </div>
-            </div>
-            <div class="planing_block">
-              <div class="icon_image">
-                <img class="icon_image" src="img/star.png" alt="star">
-              </div>
-              <div class="text_image">
-                <h3>Our experience</h3>
-                <p>
-                  Each of our travel specialists meets first-class industry
-                  standards and has at least 4.5 out of 5-star rating.
-                </p>
-              </div>
-            </div>
-            <div class="planing_block">
-              <div class="icon_image">
-                <img class="icon_image" src="img/like.png" alt="like">
-              </div>
-              <div class="text_image">
-                <h3>Satisfaction guaranteed</h3>
-                <p>
-                  Our experienced travel agents guarantee each client the most
-                  enjoyable and memorable experience.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Leonid Gumennyy -->
-    <section class="cilantro-guides-container">
-      <div class="container">
-        <h2 class="cilantro-guides__title">Cilantro's guides</h2>
-        <div class="cilantro-guides__cards">
-        </div>
-      </div>
-    </section>
-    <section class="restaurant-guide">
-      <div class="restaurant-guide__container container">
-        <h2 class="restaurant-guide__title">
-          Get a free Paris restaurant guide!
-        </h2>
-        <form class="restaurant-guide__form" action="https://formspree.io/f/meqdepnj" method="POST">
-          <input class="restaurant-guige-form__email" type="email" name="email" placeholder="Email*" required>
-          <input class="restaurant-guige-form__button" type="submit" value="Get a guide">
-        </form>
-      </div>
-    </section>
-    <section class="timer-container">
-      <h2 class="timer__title">War in Ukraine</h2>
-      <h5 class="timer__title">(24 лютого 2022)</h5>
-      <div class="timer-war">
-        <div class="war__time">
-          <div id="time__days"></div>
-          <div>days</div>
-        </div>
-        <div class="war__time">
-          <div id="time__hour"></div>
-          <div>hour</div>
-        </div>
-        <div class="war__time">
-          <div id="time__minutes"></div>
-          <div>minutes</div>
-        </div>
-        <div class="war__time">
-          <div id="time__seconds"></div>
-          <div>seconds</div>
-        </div>
-      </div>
-    </section>
-    <section class="timer-container-crimea">
-      <h2 class="timer__title-crimea">Crimea is under occupation</h2>
-      <h5 class="timer__title-crimea">(18 березня 2014)</h5>
-      <div class="timer-crimea">
-        <div class="war__time">
-          <div id="crimea__days"></div>
-          <div>days</div>
-        </div>
-        <div class="war__time">
-          <div id="crimea__hour"></div>
-          <div>hour</div>
-        </div>
-        <div class="war__time">
-          <div id="crimea__minutes"></div>
-          <div>minutes</div>
-        </div>
-        <div class="war__time">
-          <div id="crimea__seconds"></div>
-          <div>seconds</div>
-        </div>
-      </div>
-    </section>
-    <section class="membership">
-      <div class="membership__container container">
-        <h2>Membership</h2>
-        <div class="membership__slider">
-          <i class="fa-solid fa-chevron-left"></i>
-          <div class="slider__carousel-membership">
-          </div>
-          <i class="fa-solid fa-chevron-right"></i>
-          <div class="dots-wrapper">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Viktoriia Rychenko -->
-    <section class="latest-on-instagram">
-      <h2 class="latest-on-instagram__h2">Latest on Instagram</h2>
-      <div class="latest-on-instagram__images instagram-images__row">
-        <a href="#"><img src="img/castle.jpg" alt="Castle image" class="images__image"></a>
-        <a href="#"><img src="img/town_cafe.jpeg" alt="Town cafe image" class="images__image"></a>
-        <a href="#"><img src="img/beautiful_road.jpg" alt="Beautiful road image" class="images__image"></a>
-        <a href="#"><img src="img/castle_on_the_river.jpg" alt="Castle on the river image" class="images__image"></a>
-        <a href="#"><img src="img/louvre.jpg" alt="Louvre image" class="images__image"></a>
-        <a href="#"><img src="img/city_view.jpg" alt="City view image" class="images__image"></a>
-      </div>
-    </section>
-
-    <!--Tetyana Zadvorna-->
-    <section class="blog">
-      <div class="container">
-        <h2 class="blog__title">From the Blog</h2>
-        <div class="container__blog__cards">
-          <article class="blog__cards">
-            <img src="img/from-the-blog-ideas.jpg" alt="Ideas">
-            <p class="blog__text">Ideas | By Leo Smith, 3 days ago</p>
-            <h3 class="blog__cards__title">Travel Ideas for Mother's Day</h3>
-            <a class="blog__cards__link" href="#">Learn more</a>
-          </article>
-          <article class="blog__cards">
-            <img src="img/from-the-blog-destinations.jpg" alt="Destinations">
-            <p class="blog__text">Destinations | By Leo Smith, 2 weeks ago</p>
-            <h3 class="blog__cards__title">Top 5 Must-See Places in Paris</h3>
-            <a class="blog__cards__link" href="#">Learn more</a>
-          </article>
-          <article class="blog__cards">
-            <img src="img/from-the-blog-food.jpg" alt="Food" style="object-fit: cover">
-            <p class="blog__text">Food | By Leo Smith, 4 weeks ago</p>
-            <h3 class="blog__cards__title">Best Places to Eat French Food</h3>
-            <a class="blog__cards__link" href="#">Learn more</a>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="contacts">
-
-      <div class="contacts__information container">
-        <h2 class="contacts__title">Contacts</h2>
-        <p class="contacts__text">
-          Feel free to contact us if you have any questions related to our
-          tours, custom packages, or special offers.
-        </p>
-        <div class="contacts__all">
-          <section class="contacts__hours">
-            <h3 class="contacts__title__small">Hours</h3>
-            <div class="contacts__hours__days">
-              <p class="contacts__text__information">
-                Monday - Saturday: 11 AM - 9 PM
+          <div class="text-planind">
+            <div class="text-planing_text">
+              <p>
+                If you are planning a trip to France, Cilantro is the best
+                choice. Whether it's your first time in France or the 20th,
+                there is always something special to discover. Each of France
+                province has its own must-see peculiarities. Just specify the
+                region you prefer to visit and one of our expert travel guides
+                will provide you with a well-thought-out vacation plan. Book
+                your trip and enjoy the amazing Paris experience!
               </p>
-              <p class="contacts__text__information">Sunday: 11 AM - 7 PM</p>
             </div>
-          </section>
-          <section class="contacts__skype">
-            <h3 class="contacts__title__small">Skype</h3>
-            <p class="contacts__text__information">cilantro.skype</p>
-          </section>
-          <section class="contacts__phone__email">
-            <h3 class="contacts__title__small">Contacts</h3>
-            <div class="contacts__phone__email__link">
-              <ul>
-                <li>
-                  <a class="contacts__link" href="+12345678900" data-action="phone">+1(234)567 89 00</a>
-                </li>
-                <li>
-                  <a class="contacts__link" href="mailto:cilantro@email.com" data-action="email">cilantro@email.com</a>
-                </li>
-              </ul>
+            <div class="text-planing_other">
+              <div class="planing_block">
+                <div class="icon_image">
+                  <img
+                    class="icon_image"
+                    src="img/navigator.png"
+                    alt="navigator"
+                  />
+                </div>
+                <div class="text_image">
+                  <h3>What we offer</h3>
+                  <p>
+                    We offer hundreds of sightseeing tours and custom packages
+                    which can meet any taste and budget.
+                  </p>
+                </div>
+              </div>
+              <div class="planing_block">
+                <div class="icon_image">
+                  <img class="icon_image" src="img/star.png" alt="star" />
+                </div>
+                <div class="text_image">
+                  <h3>Our experience</h3>
+                  <p>
+                    Each of our travel specialists meets first-class industry
+                    standards and has at least 4.5 out of 5-star rating.
+                  </p>
+                </div>
+              </div>
+              <div class="planing_block">
+                <div class="icon_image">
+                  <img class="icon_image" src="img/like.png" alt="like" />
+                </div>
+                <div class="text_image">
+                  <h3>Satisfaction guaranteed</h3>
+                  <p>
+                    Our experienced travel agents guarantee each client the most
+                    enjoyable and memorable experience.
+                  </p>
+                </div>
+              </div>
             </div>
-          </section>
+          </div>
         </div>
-        <div class="brands-container topbar__brands-container">
-          <a href="https://facebook.com/" target="blank" class="brand topbar__brand" id="contacts__brand__f">
-            <i class="fa-brands fa-facebook-f" id="contacts__brand__link__f"></i>
-          </a>
-          <a href="https://instagram.com/" target="blank" class="brand topbar__brand" id="contacts__brand__i">
-            <i class="fa-brands fa-instagram" id="contacts__brand__link__i"></i>
-          </a>
-          <a href="https://youtube.com/" target="blank" class="brand topbar__brand" id="contacts__brand__y">
-            <i class="fa-brands fa-youtube" id="contacts__brand__link__y"></i>
-          </a>
+      </section>
+      <!-- Leonid Gumennyy -->
+      <section class="cilantro-guides-container">
+        <div class="container">
+          <h2 class="cilantro-guides__title">Cilantro's guides</h2>
+          <div class="cilantro-guides__cards"></div>
         </div>
-      </div>
-      <div class="form__contacts container">
-        <form class="form__information__all" id="contact-form" action="https://formspree.io/f/meqdepnj" method="POST">
-          <ul>
-            <li>
-              <input class="form__information" type="text" name="name" placeholder="Enter your full name*" required>
-            </li>
-            <li>
-              <input class="form__information" type="tel" name="phone" placeholder="Enter your phone number*"
-                required>
-            </li>
-            <li>
-              <input class="form__information" type="email" name="e-mail" placeholder="Enter your e-mail*" required>
-            </li>
-            <li>
-              <textarea class="form__information" id="information__message" name="message"
-                placeholder="Type your message" required></textarea>
-            </li>
-            <li>
-              <input class="form__information__button" type="submit" value="Request a quote">
-            </li>
-          </ul>
-        </form>
-        <p id="contact-form-status"></p>
-      </div>
-    </section>
-  </main>
+      </section>
+      <section class="restaurant-guide">
+        <div class="restaurant-guide__container container">
+          <h2 class="restaurant-guide__title">
+            Get a free Paris restaurant guide!
+          </h2>
+          <form
+            class="restaurant-guide__form"
+            action="https://formspree.io/f/meqdepnj"
+            method="POST"
+          >
+            <input
+              class="restaurant-guige-form__email"
+              type="email"
+              name="email"
+              placeholder="Email*"
+              required
+            />
+            <input
+              class="restaurant-guige-form__button"
+              type="submit"
+              value="Get a guide"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="timer-container">
+        <h2 class="timer__title">War in Ukraine</h2>
+        <h5 class="timer__title">(24 february 2022)</h5>
+        <div class="timer-war">
+          <div class="war__time">
+            <div id="time__days"></div>
+            <div>days</div>
+          </div>
+          <div class="war__time">
+            <div id="time__hour"></div>
+            <div>hour</div>
+          </div>
+          <div class="war__time">
+            <div id="time__minutes"></div>
+            <div>minutes</div>
+          </div>
+          <div class="war__time">
+            <div id="time__seconds"></div>
+            <div>seconds</div>
+          </div>
+        </div>
+      </section>
+      <section class="timer-container-crimea">
+        <h2 class="timer__title-crimea">Crimea is under occupation</h2>
+        <h5 class="timer__title-crimea">(18 march 2014)</h5>
+        <div class="timer-crimea">
+          <div class="war__time">
+            <div id="crimea__days"></div>
+            <div>days</div>
+          </div>
+          <div class="war__time">
+            <div id="crimea__hour"></div>
+            <div>hour</div>
+          </div>
+          <div class="war__time">
+            <div id="crimea__minutes"></div>
+            <div>minutes</div>
+          </div>
+          <div class="war__time">
+            <div id="crimea__seconds"></div>
+            <div>seconds</div>
+          </div>
+        </div>
+      </section>
+      <section class="membership">
+        <div class="membership__container container">
+          <h2>Membership</h2>
+          <div class="membership__slider">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="slider__carousel-membership"></div>
+            <i class="fa-solid fa-chevron-right"></i>
+            <div class="dots-wrapper">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <footer class="footer">
-    <div class="footer__section footer__sitemap">
-      <div class="sitemap__column sitemap__contacts">
-        <div class="logo-container sitemap__logo-container">
-          <a href="." class="logo sitemap__logo">Cilantro</a>
+      <!-- Viktoriia Rychenko -->
+      <section class="latest-on-instagram">
+        <div class="container">
+          <h2 class="latest-on-instagram__h2">Latest on Instagram</h2>
+          <div class="latest-on-instagram__images instagram-images__row">
+            <button id="instaImage1" class="insta-button">
+              <img
+                src="img/castle.jpg"
+                alt="Castle image"
+                class="images__image"
+              />
+            </button>
+            <button id="instaImage2" class="insta-button"
+              ><img
+                src="img/town_cafe.jpeg"
+                alt="Town cafe image"
+                class="images__image"
+            /></button>
+            <button id="instaImage3" class="insta-button"
+              ><img
+                src="img/beautiful_road.jpg"
+                alt="Beautiful road image"
+                class="images__image"
+            /></button>
+            <button id="instaImage4" class="insta-button"
+              ><img
+                src="img/castle_on_the_river.jpg"
+                alt="Castle on the river image"
+                class="images__image"
+            /></button>
+            <button id="instaImage5" class="insta-button"
+              ><img
+                src="img/louvre.jpg"
+                alt="Louvre image"
+                class="images__image"
+            /></button>
+            <button id="instaImage6" class="insta-button"
+              ><img
+                src="img/city_view.jpg"
+                alt="City view image"
+                class="images__image"
+            /></button>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+              <span class="close">&times;</span>
+              <img
+                id="modal-1"
+                src="img/castle.jpg"
+                alt="Castle image"
+                class="images__image"
+              />
+              </div>
+              <!-- <span class="close">&times;</span>
+              <img
+                id="modal-2"
+                class="modal-content"
+                src="img/town_cafe.jpeg"
+                alt="Town cafe image"
+                class="images__image"
+              />
+              <span class="close">&times;</span>
+              <img
+                id="modal-3"
+                class="modal-content"
+                src="img/beautiful_road.jpg"
+                alt="Beautiful road image"
+                class="images__image"
+              />
+              <span class="close">&times;</span>
+              <img
+                id="modal-4"
+                class="modal-content"
+                src="img/castle_on_the_river.jpg"
+                alt="Castle on the river image"
+                class="images__image"
+              />
+              <span class="close">&times;</span>
+              <img
+                id="modal-5"
+                class="modal-content"
+                src="img/louvre.jpg"
+                alt="Louvre image"
+                class="images__image"
+              />
+              <span class="close">&times;</span>
+              <img
+                id="modal-6"
+                class="modal-content"
+                src="img/city_view.jpg"
+                alt="City view image"
+                class="images__image"
+              /> -->
+            </div>
+          </div>
         </div>
-        <div class="phone-container sitemap__phone-container">
-          <span>Phone:</span>
-          <a class="phone sitemap__phone" href="tel:12345678900">+1 (234) 567 89 00</a>
-        </div>
-      </div>
-      <div class="sitemap__column menu sitemap__menu">
-        <a href="tours.html" class="menu__item">Tours</a>
-        <a href="reviews.html" class="menu__item">Reviews</a>
-        <a href="#faq" class="menu__item">FAQ</a>
-      </div>
-      <div class="sitemap__column menu sitemap__menu">
-        <a href="#aboutus" class="menu__item">About us</a>
-        <a href="gallery.html" class="menu__item">Gallery</a>
-        <a href="#contacts" class="menu__item">Contacts</a>
-      </div>
-      <div class="sitemap__column sitemap__follow-us">
-        <p class="follow-us__text">Follow Us</p>
-        <div class="brands-container footer__brands-container">
-          <a href="https://facebook.com/" target="blank" class="brand footer__brand">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="https://instagram.com/" target="blank" class="brand footer__brand">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://youtube.com/" target="blank" class="brand footer__brand">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="footer__section footer__copyright">
-      <p class="copyright__developers">
-        &copy; Created by:
-        <strong>team #2</strong>
-      </p>
-      <p class="copyright__policy">All rights Reserved</p>
-    </div>
-  </footer>
-  <script src="js/guides.js"></script>
-  <script src="js/membership-slider.js"></script>
-  <script src="js/war-timer.js"></script>
-  <script src="js/contact-form-formspree.js"></script>
-</body>
+      </section>
 
+      <!--Tetyana Zadvorna-->
+      <section class="blog">
+        <div class="container">
+          <h2 class="blog__title">From the Blog</h2>
+          <div class="container__blog__cards">
+            <article class="blog__cards">
+              <img src="img/from-the-blog-ideas.jpg" alt="Ideas" />
+              <p class="blog__text">Ideas | By Leo Smith, 3 days ago</p>
+              <h3 class="blog__cards__title">Travel Ideas for Mother's Day</h3>
+              <a class="blog__cards__link" href="#">Learn more</a>
+            </article>
+            <article class="blog__cards">
+              <img
+                src="img/from-the-blog-destinations.jpg"
+                alt="Destinations"
+              />
+              <p class="blog__text">Destinations | By Leo Smith, 2 weeks ago</p>
+              <h3 class="blog__cards__title">Top 5 Must-See Places in Paris</h3>
+              <a class="blog__cards__link" href="#">Learn more</a>
+            </article>
+            <article class="blog__cards">
+              <img
+                src="img/from-the-blog-food.jpg"
+                alt="Food"
+                style="object-fit: cover"
+              />
+              <p class="blog__text">Food | By Leo Smith, 4 weeks ago</p>
+              <h3 class="blog__cards__title">Best Places to Eat French Food</h3>
+              <a class="blog__cards__link" href="#">Learn more</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__information container">
+          <h2 class="contacts__title">Contacts</h2>
+          <p class="contacts__text">
+            Feel free to contact us if you have any questions related to our
+            tours, custom packages, or special offers.
+          </p>
+          <div class="contacts__all">
+            <section class="contacts__hours">
+              <h3 class="contacts__title__small">Hours</h3>
+              <div class="contacts__hours__days">
+                <p class="contacts__text__information">
+                  Monday - Saturday: 11 AM - 9 PM
+                </p>
+                <p class="contacts__text__information">Sunday: 11 AM - 7 PM</p>
+              </div>
+            </section>
+            <section class="contacts__skype">
+              <h3 class="contacts__title__small">Skype</h3>
+              <p class="contacts__text__information">cilantro.skype</p>
+            </section>
+            <section class="contacts__phone__email">
+              <h3 class="contacts__title__small">Contacts</h3>
+              <div class="contacts__phone__email__link">
+                <ul>
+                  <li>
+                    <a
+                      class="contacts__link"
+                      href="+12345678900"
+                      data-action="phone"
+                      >+1(234)567 89 00</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="contacts__link"
+                      href="mailto:cilantro@email.com"
+                      data-action="email"
+                      >cilantro@email.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="brands-container topbar__brands-container">
+            <a
+              href="https://facebook.com/"
+              target="blank"
+              class="brand topbar__brand"
+              id="contacts__brand__f"
+            >
+              <i
+                class="fa-brands fa-facebook-f"
+                id="contacts__brand__link__f"
+              ></i>
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="blank"
+              class="brand topbar__brand"
+              id="contacts__brand__i"
+            >
+              <i
+                class="fa-brands fa-instagram"
+                id="contacts__brand__link__i"
+              ></i>
+            </a>
+            <a
+              href="https://youtube.com/"
+              target="blank"
+              class="brand topbar__brand"
+              id="contacts__brand__y"
+            >
+              <i class="fa-brands fa-youtube" id="contacts__brand__link__y"></i>
+            </a>
+          </div>
+        </div>
+        <div class="form__contacts container">
+          <form
+            class="form__information__all"
+            id="contact-form"
+            action="https://formspree.io/f/meqdepnj"
+            method="POST"
+          >
+            <ul>
+              <li>
+                <input
+                  class="form__information"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your full name*"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  class="form__information"
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number*"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  class="form__information"
+                  type="email"
+                  name="e-mail"
+                  placeholder="Enter your e-mail*"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  class="form__information"
+                  id="information__message"
+                  name="message"
+                  placeholder="Type your message"
+                  required
+                ></textarea>
+              </li>
+              <li>
+                <input
+                  class="form__information__button"
+                  type="submit"
+                  value="Request a quote"
+                />
+              </li>
+            </ul>
+          </form>
+          <p id="contact-form-status"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__section footer__sitemap">
+        <div class="sitemap__column sitemap__contacts">
+          <div class="logo-container sitemap__logo-container">
+            <a href="." class="logo sitemap__logo">Cilantro</a>
+          </div>
+          <div class="phone-container sitemap__phone-container">
+            <span>Phone:</span>
+            <a class="phone sitemap__phone" href="tel:12345678900"
+              >+1 (234) 567 89 00</a
+            >
+          </div>
+        </div>
+        <div class="sitemap__column menu sitemap__menu">
+          <a href="tours.html" class="menu__item">Tours</a>
+          <a href="reviews.html" class="menu__item">Reviews</a>
+          <a href="#faq" class="menu__item">FAQ</a>
+        </div>
+        <div class="sitemap__column menu sitemap__menu">
+          <a href="#aboutus" class="menu__item">About us</a>
+          <a href="gallery.html" class="menu__item">Gallery</a>
+          <a href="#contacts" class="menu__item">Contacts</a>
+        </div>
+        <div class="sitemap__column sitemap__follow-us">
+          <p class="follow-us__text">Follow Us</p>
+          <div class="brands-container footer__brands-container">
+            <a
+              href="https://facebook.com/"
+              target="blank"
+              class="brand footer__brand"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="blank"
+              class="brand footer__brand"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://youtube.com/"
+              target="blank"
+              class="brand footer__brand"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__section footer__copyright">
+        <p class="copyright__developers">
+          &copy; Created by:
+          <strong>team #2</strong>
+        </p>
+        <p class="copyright__policy">All rights Reserved</p>
+      </div>
+    </footer>
+    <script src="js/guides.js"></script>
+    <script src="js/membership-slider.js"></script>
+    <script src="js/war-timer.js"></script>
+    <script src="js/contact-form-formspree.js"></script>
+    <script src="js/instagram-modal.js"></script>
+  </body>
 </html>
