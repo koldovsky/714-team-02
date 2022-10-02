@@ -14,7 +14,8 @@
   --font-informal: "Prata", serif;
   --font-formal: "Lato", sant-serif;
   --main-color: #192b42;
-  --main-overlay-color: rgba(25, 43, 66, 0.6);
+  --main-overlay-opacity: 0.6;
+  --main-overlay-color: rgba(25, 43, 66, var(--main-overlay-opacity));
   --white-color: #fff;
   --paragraph-color: #6c6e75;
   --light-paragraph-color: #81888d;
