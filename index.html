@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Travel Agency Cilantro</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon/travel_agency_favicon.png">
-  <link rel="stylesheet" type="text/css" href="libs/fontawesome/all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-
-  <script src="js/burger.js" defer></script>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon/travel_agency_favicon.png" />
+  <link rel="stylesheet" type="text/css" href="libs/fontawesome/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 
 <body>
@@ -71,7 +69,7 @@
           <img class="recommended_logo" src="img/ryanair.jpeg" alt="ryanair_logo">
         </div>
       </div>
-      <h2>Popular tours</h2>
+      <!-- <h2>Popular tours</h2>
       <div class="popular-tours_cards">
         <article>
           <img class="popular-tours_photos" width="300" src="img/eiffel.jpg" alt="Eiffel Tower">
@@ -98,7 +96,7 @@
           <p>October 1-5, 2022</p>
         </article>
         <a href="tours" class="button"> All Tours</a>
-      </div>
+      </div> -->
     </section>
 
     <!--Dribko Tetiana-->
@@ -139,7 +137,7 @@
     </section>
 
     <!--Denis Grabovec-->
-    <section class="words-of-gratitude">
+    <!-- <section class="words-of-gratitude">
       <h2>Words of gratitude</h2>
       <div class="workers__gratitude">
         <div class="worker__gratitude">
@@ -178,6 +176,11 @@
           <h4 class="worker__position">5-Day Paris Charming Package</h4>
         </div>
       </div>
+    </section> -->
+
+    <section class="awards">
+      <h2 class="awards__title">Awards</h2>
+      <div class="awards__container"></div>
     </section>
 
     <!--Olesja Donskova-->
@@ -246,8 +249,7 @@
     <section class="cilantro-guides-container">
       <div class="container">
         <h2 class="cilantro-guides__title">Cilantro's guides</h2>
-        <div class="cilantro-guides__cards">
-        </div>
+        <div class="cilantro-guides__cards"></div>
       </div>
     </section>
     <section class="restaurant-guide">
@@ -261,10 +263,10 @@
         </form>
       </div>
     </section>
-    <section class="timer-container">
-      <h2 class="timer__title">War in Ukraine</h2>
-      <h5 class="timer__title">(24 лютого 2022)</h5>
-      <div class="timer-war">
+    <section class="timer-container war-timer-container">
+      <h2 class="timer-container__title">War in Ukraine</h2>
+      <h5 class="timer-container__subtitle">(24 february 2022)</h5>
+      <div class="timer war-timer">
         <div class="war__time">
           <div id="time__days"></div>
           <div>days</div>
@@ -283,10 +285,10 @@
         </div>
       </div>
     </section>
-    <section class="timer-container-crimea">
-      <h2 class="timer__title-crimea">Crimea is under occupation</h2>
-      <h5 class="timer__title-crimea">(18 березня 2014)</h5>
-      <div class="timer-crimea">
+    <section class="timer-container crimea-timer-container">
+      <h2 class="timer-container__title">Crimea is under occupation</h2>
+      <h5 class="timer-container__subtitle">(18 march 2014)</h5>
+      <div class="timer crimea-timer">
         <div class="war__time">
           <div id="crimea__days"></div>
           <div>days</div>
@@ -310,8 +312,7 @@
         <h2>Membership</h2>
         <div class="membership__slider">
           <i class="fa-solid fa-chevron-left"></i>
-          <div class="slider__carousel-membership">
-          </div>
+          <div class="slider__carousel-membership"></div>
           <i class="fa-solid fa-chevron-right"></i>
           <div class="dots-wrapper">
             <span class="dot active"></span>
@@ -324,14 +325,69 @@
 
     <!-- Viktoriia Rychenko -->
     <section class="latest-on-instagram">
-      <h2 class="latest-on-instagram__h2">Latest on Instagram</h2>
-      <div class="latest-on-instagram__images instagram-images__row">
-        <a href="#"><img src="img/castle.jpg" alt="Castle image" class="images__image"></a>
-        <a href="#"><img src="img/town_cafe.jpeg" alt="Town cafe image" class="images__image"></a>
-        <a href="#"><img src="img/beautiful_road.jpg" alt="Beautiful road image" class="images__image"></a>
-        <a href="#"><img src="img/castle_on_the_river.jpg" alt="Castle on the river image" class="images__image"></a>
-        <a href="#"><img src="img/louvre.jpg" alt="Louvre image" class="images__image"></a>
-        <a href="#"><img src="img/city_view.jpg" alt="City view image" class="images__image"></a>
+      <div class="container">
+        <h2 class="latest-on-instagram__h2">Latest on Instagram</h2>
+        <div class="latest-on-instagram__images instagram-images__row">
+          <button id="instaImage1" class="insta-button">
+            <img src="img/castle.jpg" alt="Castle image" class="images__image">
+          </button>
+          <button id="instaImage2" class="insta-button"><img src="img/town_cafe.jpeg" alt="Town cafe image"
+              class="images__image"></button>
+          <button id="instaImage3" class="insta-button"><img src="img/beautiful_road.jpg" alt="Beautiful road image"
+              class="images__image"></button>
+          <button id="instaImage4" class="insta-button"><img src="img/castle_on_the_river.jpg"
+              alt="Castle on the river image" class="images__image"></button>
+          <button id="instaImage5" class="insta-button"><img src="img/louvre.jpg" alt="Louvre image"
+              class="images__image"></button>
+          <button id="instaImage6" class="insta-button"><img src="img/city_view.jpg" alt="City view image"
+              class="images__image"></button>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img id="modal-1" src="img/castle.jpg" alt="Castle image" class="images__image">
+            </div>
+            <!-- <span class="close">&times;</span>
+              <img
+                id="modal-2"
+                class="modal-content"
+                src="img/town_cafe.jpeg"
+                alt="Town cafe image"
+                class="images__image"
+             >
+              <span class="close">&times;</span>
+              <img
+                id="modal-3"
+                class="modal-content"
+                src="img/beautiful_road.jpg"
+                alt="Beautiful road image"
+                class="images__image"
+             >
+              <span class="close">&times;</span>
+              <img
+                id="modal-4"
+                class="modal-content"
+                src="img/castle_on_the_river.jpg"
+                alt="Castle on the river image"
+                class="images__image"
+             >
+              <span class="close">&times;</span>
+              <img
+                id="modal-5"
+                class="modal-content"
+                src="img/louvre.jpg"
+                alt="Louvre image"
+                class="images__image"
+             >
+              <span class="close">&times;</span>
+              <img
+                id="modal-6"
+                class="modal-content"
+                src="img/city_view.jpg"
+                alt="City view image"
+                class="images__image"
+             > -->
+          </div>
+        </div>
       </div>
     </section>
 
@@ -416,8 +472,7 @@
               <input class="form__information" type="text" name="name" placeholder="Enter your full name*" required>
             </li>
             <li>
-              <input class="form__information" type="tel" name="phone" placeholder="Enter your phone number*"
-                required>
+              <input class="form__information" type="tel" name="phone" placeholder="Enter your phone number*" required>
             </li>
             <li>
               <input class="form__information" type="email" name="e-mail" placeholder="Enter your e-mail*" required>
@@ -481,10 +536,13 @@
       <p class="copyright__policy">All rights Reserved</p>
     </div>
   </footer>
+  <script src="js/burger.js"></script>
   <script src="js/guides.js"></script>
+  <script src="js/awards.js"></script>
   <script src="js/membership-slider.js"></script>
   <script src="js/war-timer.js"></script>
   <script src="js/contact-form-formspree.js"></script>
+  <script src="js/instagram-modal.js"></script>
 </body>
 
 </html>

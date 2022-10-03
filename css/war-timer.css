@@ -1,0 +1,49 @@
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8rem;
+}
+
+.timer-container .timer-container__title {
+    margin: 5px 0 0;
+    font-size: 1.3rem;
+}
+
+.timer-container .timer-container__subtitle {
+    font-weight: 300;
+}
+
+@media (min-width: 767px) {
+    .timer-container {
+        font-size: 1rem;
+    }
+    
+    .timer-container .timer-container__title {
+        font-size: 1.5rem;
+    }
+}
+
+.war-timer-container {
+    background: linear-gradient(rgba(var(--war-timer-blue-rgb), 0.7), rgba(var(--war-timer-blue-rgb), 0.7)),
+        url("../img/war-timer/sky.jpg");
+    background-size: cover;
+    color: rgba(var(--war-timer-yellow-rgb), 1);
+}
+
+.crimea-timer-container {
+    background: linear-gradient(rgba(var(--war-timer-yellow-rgb), 0.5), rgba(var(--war-timer-yellow-rgb), 0.5)),
+        url("../img/war-timer/wheet.png");
+    background-size: contain;
+    color: rgba(var(--war-timer-blue-rgb), 1);
+}
+
+.timer {
+    display: flex;
+}
+
+.war__time {
+    margin: 10px;
+}

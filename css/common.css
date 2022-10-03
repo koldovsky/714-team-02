@@ -14,7 +14,8 @@
   --font-informal: "Prata", serif;
   --font-formal: "Lato", sant-serif;
   --main-color: #192b42;
-  --main-overlay-color: rgba(25, 43, 66, 0.6);
+  --main-overlay-opacity: 0.6;
+  --main-overlay-color: rgba(25, 43, 66, var(--main-overlay-opacity));
   --white-color: #fff;
   --paragraph-color: #6c6e75;
   --light-paragraph-color: #81888d;
@@ -23,11 +24,14 @@
   --brand-icon-size: 13px;
   --brand-gap: 15px;
   --phone-color: #877454;
-  font-family: var(--font-informal);
-  color: var(--main-color);
   --contacts-field-color: #f7f7f7; 
   --contacts-field-line-color: rgb(0, 174, 255);
   --reviews-card-bg-color: #f5f5f1;
+  --war-timer-yellow-rgb: 255, 255, 0;
+  --war-timer-blue-rgb: 0, 0, 139;
+
+  font-family: var(--font-informal);
+  color: var(--main-color);
 }
 
 body.burger-active {
