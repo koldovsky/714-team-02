@@ -11,36 +11,36 @@
   const dayStartWar = new Date(`February 24 2022 03:40:00`);
   const dayOccupationCrimea = new Date(`March 18 2014 00:00:00`);
 
-  function updateTimer() {
+  function updateTimer(date) {
     const currentTime = new Date();
-    const diff = currentTime - dayStartWar;
+    const diff = currentTime - date;
 
-    const d = Math.floor(diff / 1000 / 60 / 60 / 24);
-    const h = Math.floor(diff / 1000 / 60 / 60) % 24;
-    const m = Math.floor(diff / 1000 / 60) % 60;
-    const s = Math.floor(diff / 1000) % 60;
-    
-    days.innerHTML = d;
-    hour.innerHTML = h;
-    minutes.innerHTML = m;
-    seconds.innerHTML = s;
+    return {
+      d: Math.floor(diff / 1000 / 60 / 60 / 24),
+      h: Math.floor(diff / 1000 / 60 / 60) % 24,
+      m: Math.floor(diff / 1000 / 60) % 60,
+      s: Math.floor(diff / 1000) % 60,
+    };
   }
 
-  function updateTimerCrimea() {
-    const currentTime = new Date();
-    const diff = currentTime - dayOccupationCrimea;
-    
-    const d = Math.floor(diff / 1000 / 60 / 60 / 24);
-    const h = Math.floor(diff / 1000 / 60 / 60) % 24;
-    const m = Math.floor(diff / 1000 / 60) % 60;
-    const s = Math.floor(diff / 1000) % 60;
+  function renderDate() {
+    const timeWar = updateTimer(dayStartWar);
 
-    daysCrimea.innerHTML = d;
-    hourCrimea.innerHTML = h;
-    minutesCrimea.innerHTML = m;
-    secondsCrimea.innerHTML = s;
+    days.innerHTML = timeWar.d;
+    hour.innerHTML = timeWar.h;
+    minutes.innerHTML = timeWar.m;
+    seconds.innerHTML = timeWar.s;
   }
 
-  setInterval(updateTimer, 1000);
-  setInterval(updateTimerCrimea, 1000);
+  function renderDateCrimea() {
+    const timeWar = updateTimer(dayOccupationCrimea);
+
+    daysCrimea.innerHTML = timeWar.d;
+    hourCrimea.innerHTML = timeWar.h;
+    minutesCrimea.innerHTML = timeWar.m;
+    secondsCrimea.innerHTML = timeWar.s;
+  }
+
+  setInterval(renderDate, 1000);
+  setInterval(renderDateCrimea, 1000);
 })();
