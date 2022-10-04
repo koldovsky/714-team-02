@@ -1,0 +1,11 @@
+.words-of-gratitude {
+    background-image: url("../img/world.png");
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px 24px;
+}
+.worker__gratitude{
+    background-color: var(--white-color);
+}
