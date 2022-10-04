@@ -1,0 +1,35 @@
+
+.article {
+    margin: 70px 0;
+}
+.article .container {
+    margin: 0 35px;
+}
+@media (min-width: 1200px) {
+    .article .container {
+        margin: auto;
+    }
+}
+.article .article-title {
+    font-weight: 300;
+    margin: 50px 0;
+}
+
+.article .article-paragraph {
+    font-family: var(--font-formal);
+    line-height: 24px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.article-about__image-container img{
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 767px) {
+    .article-about__image-container img{
+        max-height: 350px;
+    }
+}
