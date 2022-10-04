@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Travel Agency Cilantro</title>
+    <title>Contacts | Travel Agency Cilantro</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/travel_agency_favicon.png">
     <link rel="stylesheet" type="text/css" href="libs/fontawesome/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-
 <body>
     <header class="header">
         <div class="header__section header__topbar">
@@ -52,38 +51,89 @@
         </div>
     </header>
     <main>
-        <section class="gallery">
-            <h2 class="gallery__h2">Gallery</h2>
-            <div class="gallery__clock-container"></div>
-            <div class="gallery__cards">
-                <article class="card">
-                    <img class="card__image" src="img/royal_palace_madrid.jpg" alt="Paris tour image">
-                    <h4 class="gallery__h4">Paris in spring</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/luara_castle.jpeg" alt="Burgundy tour image">
-                    <h4 class="gallery__h4">Burgundy culture and wine</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/hungarian_parliament.jpeg" alt="Budapest tour image">
-                    <h4 class="gallery__h4">Budapest parliament guided tours</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/torre_de_belem.jpeg" alt="Normandy tour image">
-                    <h4 class="gallery__h4">Normandy Tour</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/paris_seine.jpg" alt="Paris in autumn tour image">
-                    <h4 class="gallery__h4">Paris in autumn</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/gothic_buildings.jpg" alt="Paris tour image">
-                    <h4 class="gallery__h4">Charming Paris tour</h4>
-                </article>
+        <section class="contacts">
+            <div class="container contacts__full">
+                <div class="contacts__information">
+                    <h2 class="contacts__title">Contacts</h2>
+                    <p class="contacts__text">
+                        Feel free to contact us if you have any questions related to our
+                        tours, custom packages, or special offers.
+                    </p>
+                    <div class="contacts__all">
+                        <section class="contacts__hours">
+                            <h3 class="contacts__title__small">Hours</h3>
+                            <div class="contacts__hours__days">
+                                <p class="contacts__text__information">
+                                    Monday - Saturday: 11 AM - 9 PM
+                                </p>
+                                <p class="contacts__text__information">Sunday: 11 AM - 7 PM</p>
+                            </div>
+                        </section>
+                        <section class="contacts__skype">
+                            <h3 class="contacts__title__small">Skype</h3>
+                            <p class="contacts__text__information">cilantro.skype</p>
+                        </section>
+                        <section class="contacts__phone__email">
+                            <h3 class="contacts__title__small">Contacts</h3>
+                            <div class="contacts__phone__email__link">
+                                <ul>
+                                    <li>
+                                        <a class="contacts__link" href="+12345678900" data-action="phone">+1(234)567 89
+                                            00</a>
+                                    </li>
+                                    <li>
+                                        <a class="contacts__link" href="mailto:cilantro@email.com"
+                                            data-action="email">cilantro@email.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="brands-container topbar__brands-container">
+                        <a href="https://facebook.com/" target="blank" class="brand topbar__brand"
+                            id="contacts__brand__f">
+                            <i class="fa-brands fa-facebook-f" id="contacts__brand__link__f"></i>
+                        </a>
+                        <a href="https://instagram.com/" target="blank" class="brand topbar__brand"
+                            id="contacts__brand__i">
+                            <i class="fa-brands fa-instagram" id="contacts__brand__link__i"></i>
+                        </a>
+                        <a href="https://youtube.com/" target="blank" class="brand topbar__brand"
+                            id="contacts__brand__y">
+                            <i class="fa-brands fa-youtube" id="contacts__brand__link__y"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="form__contacts">
+                    <form class="form__information__all" id="contact-form" action="https://formspree.io/f/meqdepnj"
+                        method="POST">
+                        <ul>
+                            <li>
+                                <input class="form__information" type="text" name="name"
+                                    placeholder="Enter your full name*" required>
+                            </li>
+                            <li>
+                                <input class="form__information" type="tel" name="phone"
+                                    placeholder="Enter your phone number*" required>
+                            </li>
+                            <li>
+                                <input class="form__information" type="email" name="e-mail"
+                                    placeholder="Enter your e-mail*" required>
+                            </li>
+                            <li>
+                                <textarea class="form__information" id="information__message" name="message"
+                                    placeholder="Type your message" required></textarea>
+                            </li>
+                            <li>
+                                <input class="form__information__button" type="submit" value="Request a quote">
+                            </li>
+                        </ul>
+                    </form>
+                    <p id="contact-form-status"></p>
+                </div>
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="footer__section footer__sitemap">
             <div class="sitemap__column sitemap__contacts">
@@ -103,7 +153,7 @@
             <div class="sitemap__column menu sitemap__menu">
                 <a href="about-us.html" class="menu__item">About us</a>
                 <a href="gallery.html" class="menu__item">Gallery</a>
-                <a href="contacts.html" class="menu__item">Contacts</a>
+                <a href="#contacts" class="menu__item">Contacts</a>
             </div>
             <div class="sitemap__column sitemap__follow-us">
                 <p class="follow-us__text">Follow Us</p>
@@ -130,6 +180,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/contact-form-formspree.js"></script>
 </body>
-
 </html>

@@ -1,133 +1,122 @@
+.contacts {
+    background-image: url(../img/light-background-contacts.webp);
+    display: flex;
+    align-items: center;
+}
+.contacts__full {
+    display: grid;
+    gap: 30px;
+    text-align: left;
+    padding: 90px 0px;
+}
+@media (min-width: 767px) {
+    .contacts__full {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.contacts__information {
+    padding: 0px 0px 0px 10px;
+}
 .contacts__title {
     color: var(--main-color);
     font-family: var(--font-informal);
     font-size: 28px;
     font-stretch: 100%;
     font-weight: 400;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0;
+    padding: 0;
     text-align: left;
 }
-
 .contacts__text {
     color: var(--phone-color);
     font-family: var(--font-informal);
     font-size: 20px;
     font-stretch: 100%;
     font-weight: 400;
-    margin: 0px 0px 0px 0px;
+    margin: 0;
     padding: 30px 0px 0px 0px;
     text-align: left;
     line-height: 30px;
 }
-
-@media (min-width: 767px) {
-    .contacts {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
-    }
+.contacts__all {
+    padding: 40px 0px 30px 0px;
 }
-
-.contacts {
-    background-image: url(../img/light-background-contacts.png);
-    padding: 100px 0px 20px 90px;
-    line-height: 30px;
-}
-
 .contacts__title__small {
     color: var(--main-color);
     font-family: var(--font-informal);
     font-size: 22px;
     font-stretch: 100%;
     font-weight: 400;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0;
+    padding: 0;
     text-align: left;
 }
-
 .contacts__text__information {
     color: var(--paragraph-color);
     font-family: var(--font-formal);
     font-size: 16px;
     font-stretch: 100%;
     font-weight: 400;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0;
+    padding: 0;
 }
-
 .contacts__link {
     color: var(--phone-color);
     font-family: var(--font-formal);
     font-size: 16px;
     font-stretch: 100%;
     font-weight: 400;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0;
+    padding: 0;
 }
-
 .contacts__link:hover {
     text-decoration: underline;
 }
-
-@media (min-width: 767px) {
-
-    .contacts__hours,
-    .contacts__skype,
-    .contacts__phone__email {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-.contacts__all {
-    padding: 40px 0px 0px 0px;
-}
-
 .contacts__hours,
 .contacts__skype,
 .contacts__phone__email {
     padding: 30px 0px 0px 0px;
+    display: grid;
 }
-
-.contacts__information {
-    padding: 0px 0px 100px 0px;
+@media (min-width: 767px) {
+    .contacts__hours,
+    .contacts__skype,
+    .contacts__phone__email {
+        grid-template-columns: 1fr 2fr;
+    }
 }
-
 #contacts__brand__f,
 #contacts__brand__i,
 #contacts__brand__y {
     border: 1px solid var(--main-color);
 }
-
 #contacts__brand__link__f,
 #contacts__brand__link__i,
 #contacts__brand__link__y {
     color: var(--main-color);
 }
-
 #contacts__brand__f:hover,
 #contacts__brand__i:hover,
 #contacts__brand__y:hover {
     background-color: var(--main-color);
 }
-
 #contacts__brand__link__f:hover,
 #contacts__brand__link__i:hover,
 #contacts__brand__link__y:hover {
     color: var(--white-color);
 }
-
 .form__contacts {
     background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    padding: 75px 50px 75px 50px;
+    padding: 90px 0px 100px 0px;
 }
-
+.form__information__all {
+    word-wrap: break-word;
+    padding: 20px 0px 0px 0px;
+}
 .form__information {
     background-color: var(--contacts-field-color);
     color: var(--paragraph-color);
@@ -135,26 +124,21 @@
     font-size: 16px;
     font-stretch: 100%;
     font-weight: 400;
-    margin: 12px 0px 0px 0px;
+    margin: 12px 0px 0px 24px;
     padding: 11px 20px 11px 0px;
     text-align: start;
     line-height: 20px;
     border-style: none;
     border-color: var (--main-color);
-   
     border-radius: 2%;
-    
-       
-
+    min-width: 250px;
 }
-.form__information:focus { 
-    outline: 2px solid var(--contacts-field-line-color); 
-}  
-
+.form__information:focus {
+    outline: 2px solid var(--contacts-field-line-color);
+}
 #information__message {
     height: 150px;
 }
-
 .form__information__button {
     color: var(--white-color);
     font-family: var(--font-informal);
@@ -162,15 +146,14 @@
     font-size: 16px;
     font-stretch: 100%;
     font-weight: 400;
-    margin: 40px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 40px 0px 0px 20px;
+    padding: 0;
     text-align: center;
     cursor: pointer;
     border-style: none;
     line-height: 38px;
     min-width: 250px;
 }
-
 .form__information__button:hover {
     background-color: var(--main-overlay-color);
 }
