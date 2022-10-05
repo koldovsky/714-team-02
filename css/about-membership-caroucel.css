@@ -1,0 +1,128 @@
+.membership-caroucel {
+    --slide-gap: 30px;
+    padding: 20px 0 100px;
+}
+
+.membership-caroucel .caroucel__title {
+    font-weight: 300;
+    text-align: center;
+}
+
+.membership-caroucel .caroucel__slides {
+    position: relative;
+}
+
+.membership-caroucel .caroucel__button {
+    position: absolute;
+    border: none;
+    min-width: 24px;
+    background-color: var(--main-color);
+    opacity: 0.85;
+    color: var(--white-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 200ms;
+}
+
+.membership-caroucel .caroucel__button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.membership-caroucel .caroucel__button i {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+@media (min-width: 767px) {
+    .membership-caroucel .caroucel__button {
+        min-width: 32px;
+    }
+    
+    .membership-caroucel .caroucel__button i {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .membership-caroucel .caroucel__button {
+        background-color: transparent;
+        opacity: 1;
+        color: var(--paragraph-color);
+    }
+
+    .membership-caroucel .caroucel__button i {
+        font-size: 30px;
+    }
+}
+
+.membership-caroucel .caroucel__prev {
+    left: 25px;
+}
+
+.membership-caroucel .caroucel__next {
+    right: 25px;
+}
+
+.membership-caroucel .slides__track {
+    gap: var(--slide-gap);
+    display: flex;
+    justify-content: center;
+    padding: 0 calc(var(--slide-gap) * 2);
+    overflow-x: hidden;
+}
+
+.membership-caroucel .slide:not(:first-child) {
+    display: none;
+}
+
+@media (min-width: 375px) {
+    .membership-caroucel .slide:nth-child(-n+2) {
+        display: block;
+    }
+}
+
+@media (min-width: 480px) {
+    .membership-caroucel .slide:nth-child(-n+3) {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .membership-caroucel .slide:nth-child(-n+5) {
+        display: block;
+    }
+}
+
+.membership-caroucel .slide img {
+    max-height: 170px;
+}
+
+.membership-caroucel .caroucel__bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--slide-gap);
+}
+
+.membership-caroucel .caroucel__bullet {
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+}
+
+.membership-caroucel .caroucel__bullet:hover {
+    cursor: pointer;
+}
+
+.membership-caroucel .caroucel__bullet:not(.active):hover {
+    background-color: var(--paragraph-color);
+}
+
+.membership-caroucel .caroucel__bullet.active {
+    background-color: var(--light-paragraph-color);
+}
