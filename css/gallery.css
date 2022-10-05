@@ -36,3 +36,13 @@
 .gallery__clock-container {
   margin-bottom: 40px;
 }
+
+.images-carousel .carousel-slides {
+  display: flex;
+  justify-content: space-around;
+  min-width: 300px;
+}
+
+.images-carousel {
+  min-height: 400px;
+}
