@@ -74,6 +74,12 @@
     overflow-x: hidden;
 }
 
+@media (min-width: 1200px) {
+    .membership-caroucel .slides__track {
+        padding: 0;
+    }
+}
+
 .membership-caroucel .slide:not(:first-child) {
     display: none;
 }
