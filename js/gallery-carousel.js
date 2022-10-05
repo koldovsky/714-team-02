@@ -14,7 +14,7 @@
                     <h4 class="gallery__h4">Budapest parliament guided tours</h4>
                 </article>`,
     `<article class="card">
-                    <img class="card__image" src="img/torre_de_belem.jpeg" alt="Normandy tour image">
+                    <img class="card__image" src="img/torre_de_belem.jpg" alt="Normandy tour image">
                     <h4 class="gallery__h4">Normandy Tour</h4>
                 </article>`,
     `<article class="card">
