@@ -52,10 +52,15 @@
         </div>
     </header>
     <main>
-        <section class="gallery">
+        <section class="gallery container">
             <h2 class="gallery__h2">Gallery</h2>
             <div class="gallery__clock-container"></div>
-            <div class="gallery__cards">
+            <div class="images-carousel">
+                <button class="btn-prev">Prev</button>
+                <div class="carousel-slides"></div>
+                <button class="btn-next">Next</button>
+            </div>
+            <!-- <div class="gallery__cards">
                 <article class="card">
                     <img class="card__image" src="img/royal_palace_madrid.jpg" alt="Paris tour image">
                     <h4 class="gallery__h4">Paris in spring</h4>
@@ -80,7 +85,7 @@
                     <img class="card__image" src="img/gothic_buildings.jpg" alt="Paris tour image">
                     <h4 class="gallery__h4">Charming Paris tour</h4>
                 </article>
-            </div>
+            </div> -->
         </section>
     </main>
 
@@ -130,6 +135,7 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/gallery-carousel.js"></script>
 </body>
 
 </html>
