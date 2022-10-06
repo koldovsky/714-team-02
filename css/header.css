@@ -69,7 +69,8 @@
 .header__greeting-container {
     position: relative;
     height: 783.6px;
-    background: linear-gradient(var(--main-overlay-color), var(--main-overlay-color)), url(../img/header-background.webp);
+    background: linear-gradient(var(--main-overlay-color), var(--main-overlay-color)), 
+        url(./img/light-background-contacts.webp);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

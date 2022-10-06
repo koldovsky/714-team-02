@@ -1,44 +1,38 @@
 @media(min-width:600px) {
-    .planning_container {
+    .travel_planing_professional {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
+        gap: 30px;
+        }
 }
-
 .travel_planing>h2 {
     text-align: center;
-    font-size: 28px;
-}
+    font-size: 28px;}
 
-.text-planing_other {
-    display: block;
+    .planing_block>.text_image>h3 {
+        color: #b2a385;
+        padding-bottom: 10px;
+    
 }
+.planing_foto {
+    object-fit: cover;
+    width: 90%;
+    height: 70%;
+padding-left: 10%;}
 
 .planing_block>.icon_image {
-    width: 100px;
-    padding-right: 40px;
+    width: 150px;
+    padding-right: 60px;}
 
-}
-
-.text-planing_other>.planing_block {
-    display: flex;
-    padding-top: 10px;
-}
-
-.planing_block>.text_image>h3 {
-    color: #b2a385;
-    padding-bottom: 10px;
-}
-
-.text-planind {
-    text-align: justify;
-    padding-right: 50px;
-}
-
-.case_foto> img {
-    object-fit: cover;
-    width: 80%;
-    height: 60%;
-    padding-left: 50px;
-}
+    .text-planing_other>.planing_block {
+        display: flex;
+        padding-right: 10%;
+        gap: 15px;
+    }
+    .travel_planing_text {
+        padding-right: 10%;
+        padding-right: 2%;
+        text-align: justify;
+    }
+    
+    

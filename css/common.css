@@ -26,7 +26,8 @@
   --phone-color: #877454;
   --contacts-field-color: #f7f7f7; 
   --contacts-field-line-color: rgb(0, 174, 255);
-  --reviews-card-bg-color: #f5f5f1;
+  --reviews-card-bg-color: rgb(245, 245, 241);
+  --reviews-card-bg-color-rgb: 245, 245, 241;
   --war-timer-yellow-rgb: 255, 255, 0;
   --war-timer-blue-rgb: 0, 0, 139;
 

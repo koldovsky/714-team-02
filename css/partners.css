@@ -1,0 +1,45 @@
+.partners {
+    padding: 80px 20px 100px;
+    background-image: linear-gradient(rgba(var(--reviews-card-bg-color-rgb), 0.6), rgba(var(--reviews-card-bg-color-rgb), 0.6)),
+        url(../img/partners/background.png);
+}
+
+.partners .section-title {
+    font-weight: 300;
+    margin: 0 0 50px 0;
+}
+
+.partners .section-title {
+    text-align: center;
+}
+
+.partners .partners__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin: 0 25px;
+}
+
+@media (min-width: 767px) {
+    .partners .partners__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 991px) {
+    .partners .partners__container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+.partners .partner {
+    padding: 25px 0;
+    background-color: var(--white-color);
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 9%);
+}
+
+.partners .partner img {
+    max-width: 55%;
+    margin: auto;
+}

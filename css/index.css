@@ -1,5 +1,5 @@
 @import url(common.css);
-@import url(burger-menu.css);
+@import url(header-burger-menu.css);
 @import url(header-nav-menu.css);
 @import url(header-topbar.css);
 @import url(header-greeting.css);
@@ -16,4 +16,9 @@
 @import url(popular.css);
 @import url(reviews.css);
 @import url(war-timer.css);
-@import url(contacts.css);
+@import url(agency.css);
+@import url(about-articles.css);
+@import url(about-membership-caroucel.css);
+@import url(words-of-gratitude.css);
+@import url(partners.css);
+@import url(offers.css);
