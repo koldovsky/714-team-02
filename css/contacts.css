@@ -1,0 +1,20 @@
+#contacts__brand__facebook,
+#contacts__brand__instagram,
+#contacts__brand__youtube {
+    border: 1px solid var(--main-color);
+}
+#contacts__brand__link__facebook,
+#contacts__brand__link__instagram,
+#contacts__brand__link__youtube {
+    color: var(--main-color);
+}
+#contacts__brand__facebook:hover,
+#contacts__brand__instagram:hover,
+#contacts__brand__youtube:hover {
+    background-color: var(--main-color);
+}
+#contacts__brand__link__facebook:hover,
+#contacts__brand__link__instagram:hover,
+#contacts__brand__link__youtube:hover {
+    color: var(--white-color);
+}
