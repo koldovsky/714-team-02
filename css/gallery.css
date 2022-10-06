@@ -40,9 +40,23 @@
 .images-carousel .carousel-slides {
   display: flex;
   justify-content: space-around;
-  min-width: 300px;
+  gap: 2rem;
+  /* min-width: 300px; */
+  
 }
 
 .images-carousel {
   min-height: 400px;
+}
+
+@media (min-width: 767px) {
+  .card__image {
+    max-width: 434px;
+  }
+}
+
+@media (min-width: 991px) {
+  .card__image {
+    max-width: 400px;
+  }
 }
