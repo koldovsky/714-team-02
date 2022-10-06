@@ -30,6 +30,19 @@
   // присвоюємо індекс 0 початковому слайду
   let currentSlideIdx = 0;
 
+  // обробник події на зміну ширини екрану (щоб адаптивно змінювалась кількість картинох, відображених в галереї)
+  window.addEventListener("resize", renderSlide);
+
+  // вибираєм кнопку некст
+  const btnNext = document.querySelector(".images-carousel .btn-next");
+  // коли клікаєм на кнопку, запускається функція, що міняє на наступний слайд
+  btnNext.addEventListener("click", nextSlide);
+
+  // вибираєм кнопку прев
+  const btnPrev = document.querySelector(".images-carousel .btn-prev");
+  // коли клікаєм на кнопку, запускається функція, що міняє на попередній слайд
+  btnPrev.addEventListener("click", prevSlide);
+
   // вибираєм з html селектором діви де будуть наші слайди і присвоюємо перемінній
   const slideContainer = document.querySelector(
     ".images-carousel .carousel-slides"
@@ -75,17 +88,4 @@
   renderSlide();
 
   //   setInterval(nextSlide, 5000);
-
-  // вибираєм кнопку некст
-  const btnNext = document.querySelector(".images-carousel .btn-next");
-  // коли клікаєм на кнопку, запускається функція, що міняє на наступний слайд
-  btnNext.addEventListener("click", nextSlide);
-
-  // вибираєм кнопку прев
-  const btnPrev = document.querySelector(".images-carousel .btn-prev");
-  // коли клікаєм на кнопку, запускається функція, що міняє на попередній слайд
-  btnPrev.addEventListener("click", prevSlide);
-
-  // обробник події на зміну ширини екрану (щоб адаптивно змінювалась кількість картинох, відображених в галереї)
-  window.addEventListener("resize", renderSlide);
 })();
