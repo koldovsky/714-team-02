@@ -17,7 +17,6 @@
 .images__image {
   width: 100%;
   height: auto;
-  max-width: 440px;
 }
 
 .latest-on-instagram__images {
@@ -27,6 +26,7 @@
   gap: 1em;
   margin-top: 45px;
   padding: 0 15px;
+  /* position: relative; */
 }
 
 .insta-button {
@@ -36,6 +36,7 @@
 
 .modal {
   display: none; /* Hidden by default */
+  overflow: hidden;
 
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -56,17 +57,23 @@
   /* border: 1px solid #888; */
   width: 60%; /* Could be more or less, depending on screen size */
   max-height: fit-content;
+  position: relative;
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
+  position: absolute;
+  color: var(--light-paragraph-color);
+  /* float: right; */
   font-size: 1.5em;
   font-weight: bold;
+  top: -1%;
+  right: 1%;
   margin: 0;
+  font-size: small;
+  /* margin: 0;
   margin-top: -5%;
-  margin-right: -1%;
+  margin-right: -1%; */
 }
 
 .close:hover,
@@ -87,6 +94,12 @@
   .modal-content {
     margin: 30% auto; /* 15% from the top and centered */
   }
+  
+  .close {
+  top: 0.2%;
+  right: 1%;
+  font-size: smaller;
+}
 }
 
 @media (min-width: 800px) {
@@ -95,8 +108,9 @@
     margin-left: 22%;
   }
 
-  /* .close {
-    margin-top: -25px;
-    margin-right: 25px;
-  } */
+  .close {
+  top: 0.2%;
+  right: 1%;
+  font-size: medium;
+}
 }
