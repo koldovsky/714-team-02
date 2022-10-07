@@ -30,7 +30,6 @@
   opacity: 0.2;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
 }
 
 .dot:hover {
@@ -80,6 +79,12 @@
   top: 47%;
   transform: translateY(-50%);
   transition: 200ms;
+  transition: background-color 0.6s ease;
+}
+
+.gallery-carousel-btn:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .images-carousel .btn-prev {
@@ -146,7 +151,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-   .gallery-carousel-btn {
+  .gallery-carousel-btn {
     font-size: 22px;
     width: 1.5em;
     height: 1.5em;
