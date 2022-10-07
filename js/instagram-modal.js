@@ -1,12 +1,14 @@
 // Get the modal
-const modal = document.getElementById("modal");
+const modal = document.querySelector("#modal");
 
 // Get the button that opens the modal
 
-let btn = document.getElementById("instaImage1");
+// let btn = document.getElementById("instaImage1");
+let btn = document.querySelector(".instaImage1");
+console.log(btn);
 
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
+const span = document.querySelector(".close");
 
 // When the user clicks the button, open the modal
 btn.onclick = function () {
