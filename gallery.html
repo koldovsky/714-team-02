@@ -1,141 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery | Travel Agency Cilantro</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/travel_agency_favicon.png">
-    <link rel="stylesheet" type="text/css" href="libs/fontawesome/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/favicon/travel_agency_favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="libs/fontawesome/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__section header__topbar">
-            <div class="topbar__section topbar__contacts">
-                <div class="phone-container contacts__phone-container">
-                    <span>Phone:</span>
-                    <a class="phone contacts__phone" href="tel:12345678900">+1 (234) 567 89 00</a>
-                </div>
-                <div class="brands-container topbar__brands-container">
-                    <a href="https://facebook.com/" target="blank" class="brand topbar__brand">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="https://instagram.com/" target="blank" class="brand topbar__brand">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://youtube.com/" target="blank" class="brand topbar__brand">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-            <nav class="nav topbar__section topbar__nav">
-                <div class="logo-container nav__logo-container">
-                    <a href="." class="logo nav__logo">Cilantro</a>
-                </div>
-                <div class="burger__menu-icon" title="Switch menu">
-                    <span class="burger__line line-top"></span>
-                    <span class="burger__line line-middle"></span>
-                    <span class="burger__line line-bottom"></span>
-                </div>
-                <div id="header-menu" class="menu nav__menu">
-                    <a href="tours.html" class="menu__item">Tours</a>
-                    <a href="about-us.html" class="menu__item">About us</a>
-                    <a href="reviews.html" class="menu__item">Reviews</a>
-                    <a href="gallery.html" class="menu__item">Gallery</a>
-                    <a href="#faq" class="menu__item">FAQ</a>
-                    <a href="contacts.html" class="menu__item">Contacts</a>
-                </div>
-            </nav>
+      <div class="header__section header__topbar">
+        <div class="topbar__section topbar__contacts">
+          <div class="phone-container contacts__phone-container">
+            <span>Phone:</span>
+            <a class="phone contacts__phone" href="tel:12345678900"
+              >+1 (234) 567 89 00</a
+            >
+          </div>
+          <div class="brands-container topbar__brands-container">
+            <a
+              href="https://facebook.com/"
+              target="blank"
+              class="brand topbar__brand"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="blank"
+              class="brand topbar__brand"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://youtube.com/"
+              target="blank"
+              class="brand topbar__brand"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
         </div>
+        <nav class="nav topbar__section topbar__nav">
+          <div class="logo-container nav__logo-container">
+            <a href="." class="logo nav__logo">Cilantro</a>
+          </div>
+          <div class="burger__menu-icon" title="Switch menu">
+            <span class="burger__line line-top"></span>
+            <span class="burger__line line-middle"></span>
+            <span class="burger__line line-bottom"></span>
+          </div>
+          <div id="header-menu" class="menu nav__menu">
+            <a href="tours.html" class="menu__item">Tours</a>
+            <a href="about-us.html" class="menu__item">About us</a>
+            <a href="reviews.html" class="menu__item">Reviews</a>
+            <a href="gallery.html" class="menu__item">Gallery</a>
+            <a href="#faq" class="menu__item">FAQ</a>
+            <a href="contacts.html" class="menu__item">Contacts</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="gallery container">
-            <h2 class="gallery__h2">Gallery</h2>
-            <!-- <div class="gallery__clock-container"></div> -->
-            <div class="images-carousel">
-                <button class="gallery-carousel-btn btn-prev"><i class="fa-regular fa-chevron-left"></i></button>
-                <div class="carousel-slides"></div>
-                <button class="gallery-carousel-btn btn-next"><i class="fa-regular fa-chevron-right"></i></button>
+      <section class="gallery container">
+        <h2 class="gallery__h2">Gallery</h2>
+        <div class="images-carousel">
+          <button
+            class="gallery-carousel-btn btn-prev"
+            onclick="plusSlides(-1)"
+          >
+            <i class="fa-regular fa-chevron-left"></i>
+          </button>
+          <div class="carousel-slides">
+            <div class="gallery__cards">
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/royal_palace_madrid.jpg"
+                  alt="Paris tour image"
+                />
+                <h4 class="gallery__h4">Paris in spring</h4>
+              </article>
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/luara_castle.jpeg"
+                  alt="Burgundy tour image"
+                />
+                <h4 class="gallery__h4">Burgundy culture and wine</h4>
+              </article>
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/hungarian_parliament.jpeg"
+                  alt="Budapest tour image"
+                />
+                <h4 class="gallery__h4">Budapest parliament guided tours</h4>
+              </article>
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/torre_de_belem.jpg"
+                  alt="Normandy tour image"
+                />
+                <h4 class="gallery__h4">Normandy Tour</h4>
+              </article>
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/paris_seine.jpg"
+                  alt="Paris in autumn tour image"
+                />
+                <h4 class="gallery__h4">Paris in autumn</h4>
+              </article>
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/gothic_buildings.jpg"
+                  alt="Paris tour image"
+                />
+                <h4 class="gallery__h4">Charming Paris tour</h4>
+              </article>
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/castle_on_the_river.jpg"
+                  alt="Castle_on_the_river image"
+                />
+                <h4 class="gallery__h4">Castles of France</h4>
+              </article>
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/castle.jpg"
+                  alt="Castle image"
+                />
+                <h4 class="gallery__h4">Tour to France</h4>
+              </article>
+              <article class="card">
+                <img
+                  class="card__image"
+                  src="img/louvre.jpg"
+                  alt="Toure to Lovre image"
+                />
+                <h4 class="gallery__h4">Toure to Lovre</h4>
+              </article>
             </div>
-            <!-- <div class="gallery__cards">
-                <article class="card">
-                    <img class="card__image" src="img/royal_palace_madrid.jpg" alt="Paris tour image">
-                    <h4 class="gallery__h4">Paris in spring</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/luara_castle.jpeg" alt="Burgundy tour image">
-                    <h4 class="gallery__h4">Burgundy culture and wine</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/hungarian_parliament.jpeg" alt="Budapest tour image">
-                    <h4 class="gallery__h4">Budapest parliament guided tours</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/torre_de_belem.jpeg" alt="Normandy tour image">
-                    <h4 class="gallery__h4">Normandy Tour</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/paris_seine.jpg" alt="Paris in autumn tour image">
-                    <h4 class="gallery__h4">Paris in autumn</h4>
-                </article>
-                <article class="card">
-                    <img class="card__image" src="img/gothic_buildings.jpg" alt="Paris tour image">
-                    <h4 class="gallery__h4">Charming Paris tour</h4>
-                </article>
-            </div> -->
-        </section>
+            <button
+              class="gallery-carousel-btn btn-next"
+              onclick="plusSlides(1)"
+            >
+              <i class="fa-regular fa-chevron-right"></i>
+            </button>
+          </div>
+          <br />
+          
+        </div>
+        <div style="text-align: center">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+          </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__section footer__sitemap">
-            <div class="sitemap__column sitemap__contacts">
-                <div class="logo-container sitemap__logo-container">
-                    <a href="." class="logo sitemap__logo">Cilantro</a>
-                </div>
-                <div class="phone-container sitemap__phone-container">
-                    <span>Phone:</span>
-                    <a class="phone sitemap__phone" href="tel:12345678900">+1 (234) 567 89 00</a>
-                </div>
-            </div>
-            <div class="sitemap__column menu sitemap__menu">
-                <a href="tours.html" class="menu__item">Tours</a>
-                <a href="reviews.html" class="menu__item">Reviews</a>
-                <a href="#faq" class="menu__item">FAQ</a>
-            </div>
-            <div class="sitemap__column menu sitemap__menu">
-                <a href="about-us.html" class="menu__item">About us</a>
-                <a href="gallery.html" class="menu__item">Gallery</a>
-                <a href="contacts.html" class="menu__item">Contacts</a>
-            </div>
-            <div class="sitemap__column sitemap__follow-us">
-                <p class="follow-us__text">Follow Us</p>
-                <div class="brands-container footer__brands-container">
-                    <a href="https://facebook.com/" target="blank" class="brand footer__brand">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="https://instagram.com/" target="blank" class="brand footer__brand">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://youtube.com/" target="blank" class="brand footer__brand">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
+      <div class="footer__section footer__sitemap">
+        <div class="sitemap__column sitemap__contacts">
+          <div class="logo-container sitemap__logo-container">
+            <a href="." class="logo sitemap__logo">Cilantro</a>
+          </div>
+          <div class="phone-container sitemap__phone-container">
+            <span>Phone:</span>
+            <a class="phone sitemap__phone" href="tel:12345678900"
+              >+1 (234) 567 89 00</a
+            >
+          </div>
         </div>
-        <div class="footer__section footer__copyright">
-            <p class="copyright__developers">
-                &copy; Created by:
-                <strong>team #2</strong>
-            </p>
-            <p class="copyright__policy">All rights Reserved</p>
+        <div class="sitemap__column menu sitemap__menu">
+          <a href="tours.html" class="menu__item">Tours</a>
+          <a href="reviews.html" class="menu__item">Reviews</a>
+          <a href="#faq" class="menu__item">FAQ</a>
         </div>
+        <div class="sitemap__column menu sitemap__menu">
+          <a href="about-us.html" class="menu__item">About us</a>
+          <a href="gallery.html" class="menu__item">Gallery</a>
+          <a href="contacts.html" class="menu__item">Contacts</a>
+        </div>
+        <div class="sitemap__column sitemap__follow-us">
+          <p class="follow-us__text">Follow Us</p>
+          <div class="brands-container footer__brands-container">
+            <a
+              href="https://facebook.com/"
+              target="blank"
+              class="brand footer__brand"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="blank"
+              class="brand footer__brand"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://youtube.com/"
+              target="blank"
+              class="brand footer__brand"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__section footer__copyright">
+        <p class="copyright__developers">
+          &copy; Created by:
+          <strong>team #2</strong>
+        </p>
+        <p class="copyright__policy">All rights Reserved</p>
+      </div>
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/gallery-carousel.js"></script>
-</body>
-
+  </body>
 </html>
