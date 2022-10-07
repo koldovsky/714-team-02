@@ -25,7 +25,7 @@
   --brand-gap: 15px;
   --phone-color: #877454;
   --contacts-field-color: #f7f7f7; 
-  --contacts-field-line-color: rgb(0, 174, 255);
+  --contacts-field-line-color: rgb(95, 163, 171);
   --reviews-card-bg-color: rgb(245, 245, 241);
   --reviews-card-bg-color-rgb: 245, 245, 241;
   --war-timer-yellow-rgb: 255, 255, 0;
@@ -33,6 +33,7 @@
 
   font-family: var(--font-informal);
   color: var(--main-color);
+
 }
 
 body.burger-active {
