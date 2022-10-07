@@ -1,9 +1,14 @@
+/* * {
+  border: 1px solid red;
+} */
+
 .gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   background-color: var(--white-color);
+  padding-bottom: 80px;
 }
 
 .gallery__h2 {
@@ -17,13 +22,11 @@
   font-family: var(--font-formal);
   font-weight: 400;
   font-size: 16px;
+  margin-top: 20px;
 }
 
-.card__image {
-  width: 100%;
-  height: auto;
-  max-width: 440px;
-}
+/* .card__image {
+} */
 
 .gallery .gallery__cards {
   display: grid;
@@ -39,20 +42,74 @@
 
 .images-carousel .carousel-slides {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 2rem;
+  padding: 0 15px 0 15px;
+  /* min-height: 450px; */
   /* min-width: 300px; */
   
 }
 
 .images-carousel {
-  min-height: 400px;
+  display: flex;
+  /* min-height: 450px; */
+  justify-content: space-between;
+  position: relative;
+  margin: 0 20px 0 20px;
 }
+
+.gallery-carousel-btn {
+  position: absolute;
+    width: 1.8em;
+    height: 1.8em;
+    border: none;
+    background-color: var(--main-color);
+    opacity: 0.85;
+    color: var(--white-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 200ms;
+}
+
+.images-carousel .btn-prev {
+  left: 0.42em;
+}
+
+.images-carousel .btn-next {
+  right: 0.42em;
+}
+
+.images-carousel .btn-next i {
+  font-size: 0.7em;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.images-carousel .btn-prev i {
+  font-size: 0.7em;
+  font-weight: 600;
+  opacity: 0.7;
+}
+/*  */
 
 @media (min-width: 767px) {
   .card__image {
     max-width: 434px;
   }
+
+  .gallery-carousel-btn {
+    width: 2em;
+    height: 2em;
+}
+
+.images-carousel .btn-next i {
+  font-size: 0.8em;
+}
+
+.images-carousel .btn-prev i {
+  font-size: 0.8em;
+}
 }
 
 @media (min-width: 991px) {
