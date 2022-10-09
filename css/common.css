@@ -30,11 +30,15 @@
   --reviews-card-bg-color-rgb: 245, 245, 241;
   --war-timer-yellow-rgb: 255, 255, 0;
   --war-timer-blue-rgb: 0, 0, 139;
-
+  --hue: 206;
+  --bkg: var(--hue) 50% 96%;
+  --text: var(--hue) 70% 9%;
+  --dark: var(--hue) 70% 3%;
   font-family: var(--font-informal);
   color: var(--main-color);
 
 }
+
 
 body.burger-active {
   overflow-y: hidden;

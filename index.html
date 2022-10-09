@@ -329,68 +329,29 @@
     </section>
 
     <!-- Viktoriia Rychenko -->
-    <section class="latest-on-instagram">
+    <section class="latest-on-instagram"> 
       <div class="container">
         <h2 class="latest-on-instagram__h2">Latest on Instagram</h2>
-        <div class="latest-on-instagram__images instagram-images__row">
-          <button id="instaImage1" class="insta-button instaImage1">
-            <img src="img/castle.jpg" alt="Castle image" class="images__image">
+
+        <div class="latest-on-instagram__image-container">  
+          <button class="insta-button" data-modal="true" data-gallery="France-1" aria-label="Open France-1 image gallery"> 
+            <img src="img/castle.jpg" alt="Castle image">
           </button>
-          <button id="instaImage2" class="insta-button instaImage2"><img src="img/town_cafe.jpeg" alt="Town cafe image"
-              class="images__image"></button>
-          <button id="instaImage3" class="insta-button"><img src="img/beautiful_road.jpg" alt="Beautiful road image"
-              class="images__image"></button>
-          <button id="instaImage4" class="insta-button"><img src="img/castle_on_the_river.jpg"
-              alt="Castle on the river image" class="images__image"></button>
-          <button id="instaImage5" class="insta-button"><img src="img/louvre.jpg" alt="Louvre image"
-              class="images__image"></button>
-          <button id="instaImage6" class="insta-button"><img src="img/city_view.jpg" alt="City view image"
-              class="images__image"></button>
-          <div id="modal" class="modal">
-            <div class="modal-content">
-              <span class="close"><i class="fa-solid fa-xmark"></i></span>
-              <img id="modal-1" src="img/castle.jpg" alt="Castle image" class="images__image">
-            </div>
-            <!-- <span class="close">&times;</span>
-              <img
-                id="modal-2"
-                class="modal-content"
-                src="img/town_cafe.jpeg"
-                alt="Town cafe image"
-                class="images__image"
-             >
-              <span class="close">&times;</span>
-              <img
-                id="modal-3"
-                class="modal-content"
-                src="img/beautiful_road.jpg"
-                alt="Beautiful road image"
-                class="images__image"
-             >
-              <span class="close">&times;</span>
-              <img
-                id="modal-4"
-                class="modal-content"
-                src="img/castle_on_the_river.jpg"
-                alt="Castle on the river image"
-                class="images__image"
-             >
-              <span class="close">&times;</span>
-              <img
-                id="modal-5"
-                class="modal-content"
-                src="img/louvre.jpg"
-                alt="Louvre image"
-                class="images__image"
-             >
-              <span class="close">&times;</span>
-              <img
-                id="modal-6"
-                class="modal-content"
-                src="img/city_view.jpg"
-                alt="City view image"
-                class="images__image"
-             > -->
+          <button class="insta-button" data-modal="true" data-gallery="France-2" aria-label="Open France-2 image gallery">
+            <img src="img/town_cafe.jpeg" alt="Town cafe image">
+            </button>
+          <button class="insta-button" data-modal="true" data-gallery="France-3" aria-label="Open France-3 image gallery">
+            <img src="img/beautiful_road.jpg" alt="Beautiful road image">
+            </button>
+          <button class="insta-button" data-modal="true" data-gallery="France-4" aria-label="Open France-4 image gallery">
+            <img src="img/castle_on_the_river.jpg" alt="Castle on the river image">
+            </button>
+          <button class="insta-button" data-modal="true" data-gallery="France-5" aria-label="Open France-5 image gallery">
+            <img src="img/louvre.jpg" alt="Louvre image">
+            </button>
+          <button class="insta-button" data-modal="true" data-gallery="France-6" aria-label="Open France-6 image gallery">
+            <img src="img/city_view.jpg" alt="City view image">
+            </button>
           </div>
         </div>
       </div>
@@ -607,7 +568,12 @@
   <script src="js/membership-slider.js"></script>
   <script src="js/war-timer.js"></script>
   <script src="js/contact-form-formspree.js"></script>
-  <script src="js/instagram-modal.js"></script>
+  <script type="module">
+    import initGallery from "./js/instagram-modal.js";
+    initGallery('api/instagram-galleries.json', {
+      speed: 800,
+    });
+  </script>
 </body>
 
 </html>

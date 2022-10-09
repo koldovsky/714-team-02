@@ -1,0 +1,176 @@
+[
+  {
+    "name": "France-1",
+    "images": [
+      {
+        "src": "./img/castle.jpg",
+        "alt": "Castle image"
+      },
+      {
+        "src": "./img/town_cafe.jpeg",
+        "alt": "Town cafe image"
+      },
+      {
+        "src": "./img/beautiful_road.jpg",
+        "alt": "Beautiful road image"
+      },
+      {
+        "src": "./img/castle_on_the_river.jpg",
+        "alt": "Castle on the river image"
+      },
+      {
+        "src": "./img/louvre.jpg",
+        "alt": "Louvre image"
+      },
+      {
+        "src": "./img/city_view.jpg",
+        "alt": "City view image"
+      }
+    ]
+  },
+  {
+    "name": "France-2",
+    "images": [
+      {
+        "src": "./img/town_cafe.jpeg",
+        "alt": "Town cafe image"
+      },
+      {
+        "src": "./img/beautiful_road.jpg",
+        "alt": "Beautiful road image"
+      },
+      {
+        "src": "./img/castle_on_the_river.jpg",
+        "alt": "Castle on the river image"
+      },
+      {
+        "src": "./img/louvre.jpg",
+        "alt": "Louvre image"
+      },
+      {
+        "src": "./img/city_view.jpg",
+        "alt": "City view image"
+      },
+      {
+        "src": "./img/castle.jpg",
+        "alt": "Castle image"
+      }
+    ]
+  },
+  {
+    "name": "France-3",
+    "images": [
+      {
+        "src": "./img/beautiful_road.jpg",
+        "alt": "Beautiful road image"
+      },
+      {
+        "src": "./img/castle_on_the_river.jpg",
+        "alt": "Castle on the river image"
+      },
+      {
+        "src": "./img/louvre.jpg",
+        "alt": "Louvre image"
+      },
+      {
+        "src": "./img/city_view.jpg",
+        "alt": "City view image"
+      },
+      {
+        "src": "./img/castle.jpg",
+        "alt": "Castle image"
+      },
+      {
+        "src": "./img/town_cafe.jpeg",
+        "alt": "Town cafe image"
+      }
+    ]
+  },
+  {
+    "name": "France-4",
+    "images": [
+      {
+        "src": "./img/castle_on_the_river.jpg",
+        "alt": "Castle on the river image"
+      },
+      {
+        "src": "./img/louvre.jpg",
+        "alt": "Louvre image"
+      },
+      {
+        "src": "./img/city_view.jpg",
+        "alt": "City view image"
+      },
+      {
+        "src": "./img/castle.jpg",
+        "alt": "Castle image"
+      },
+      {
+        "src": "./img/town_cafe.jpeg",
+        "alt": "Town cafe image"
+      },
+      {
+        "src": "./img/beautiful_road.jpg",
+        "alt": "Beautiful road image"
+      }
+    ]
+  },
+  {
+    "name": "France-5",
+    "images": [
+      {
+        "src": "./img/louvre.jpg",
+        "alt": "Louvre image"
+      },
+      {
+        "src": "./img/city_view.jpg",
+        "alt": "City view image"
+      },
+      {
+        "src": "./img/castle.jpg",
+        "alt": "Castle image"
+      },
+      {
+        "src": "./img/town_cafe.jpeg",
+        "alt": "Town cafe image"
+      },
+      {
+        "src": "./img/beautiful_road.jpg",
+        "alt": "Beautiful road image"
+      },
+      {
+        "src": "./img/castle_on_the_river.jpg",
+        "alt": "Castle on the river image"
+      }
+    ]
+  },
+  {
+    "name": "France-6",
+    "images": [
+      {
+        "src": "./img/city_view.jpg",
+        "alt": "City view image"
+      },
+      {
+        "src": "./img/castle.jpg",
+        "alt": "Castle image"
+      },
+      {
+        "src": "./img/town_cafe.jpeg",
+        "alt": "Town cafe image"
+      },
+      {
+        "src": "./img/beautiful_road.jpg",
+        "alt": "Beautiful road image"
+      },
+      {
+        "src": "./img/castle_on_the_river.jpg",
+        "alt": "Castle on the river image"
+      },
+      {
+        "src": "./img/louvre.jpg",
+        "alt": "Louvre image"
+      }
+    ]
+  }
+]
