@@ -41,7 +41,7 @@ export default function createModal() {
       .modal-container {
         position: fixed;
         inset: 0;
-        background-color: hsl(var(--dark) / .8);
+        background-color: hsl(var(--dark-modal-gallery) / .8);
         display: grid;
         place-items: center;
         opacity: 0;
@@ -62,7 +62,7 @@ export default function createModal() {
         display: grid;
         place-items: center;
         overflow: hidden;
-        box-shadow: 0px 2px 40px hsl(var(--dark));
+        box-shadow: 0px 2px 40px hsl(var(--dark-modal-gallery));
       }
       
       .modal__image-container {
@@ -93,8 +93,8 @@ export default function createModal() {
       .modal__btn {
         display: grid;
         place-items: center;
-        background-color: hsl(var(--bkg) / .5);
-        color: hsl(var(--text));
+        background-color: hsl(var(--bkg-modal-gallery) / .5);
+        color: hsl(var(--text-modal-gallery));
         padding: .5rem;
         border: 4px solid transparent;
         border-radius: 50%;
@@ -103,8 +103,8 @@ export default function createModal() {
       }
       
       .modal__btn:is(:hover,:focus) {
-        background-color: hsl(var(--bkg) / .7);
-        border: 4px solid hsl(var(--bkg) / .8);
+        background-color: hsl(var(--bkg-modal-gallery) / .7);
+        border: 4px solid hsl(var(--bkg-modal-gallery) / .8);
       }
      
       .modal__btn svg {
@@ -128,15 +128,15 @@ export default function createModal() {
         width: 1rem;
         height: 1rem;
         border-radius: 50%;
-        background-color: hsl(var(--bkg) / .4);
-        border: 3px solid hsl(var(--bkg) / .6);
+        background-color: hsl(var(--bkg-modal-gallery) / .4);
+        border: 3px solid hsl(var(--bkg-modal-gallery) / .6);
         cursor: pointer;
         position: relative;
       }
       
       .modal__indicator:is(:hover, :focus) {
-        background-color: hsl(var(--bkg) / .5);
-        border: 3px solid hsl(var(--bkg) / .7);
+        background-color: hsl(var(--bkg-modal-gallery) / .5);
+        border: 3px solid hsl(var(--bkg-modal-gallery) / .7);
       }
       
       .modal__indicator.active::before {
@@ -144,7 +144,7 @@ export default function createModal() {
         position: absolute;
         inset: 2px;
         border-radius: 50%;
-        background-color: hsl(var(--bkg) / .9);
+        background-color: hsl(var(--bkg-modal-gallery) / .9);
       }
     </style>
     

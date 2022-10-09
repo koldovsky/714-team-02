@@ -30,10 +30,10 @@
   --reviews-card-bg-color-rgb: 245, 245, 241;
   --war-timer-yellow-rgb: 255, 255, 0;
   --war-timer-blue-rgb: 0, 0, 139;
-  --hue: 206;
-  --bkg: var(--hue) 50% 96%;
-  --text: var(--hue) 70% 9%;
-  --dark: var(--hue) 70% 3%;
+  --modal-instagram-gallery-color: 206;
+  --bkg-modal-gallery: var(--modal-instagram-gallery-color) 50% 96%;
+  --text-modal-gallery: var(--modal-instagram-gallery-color) 70% 9%;
+  --dark-modal-gallery: var(--modal-instagram-gallery-color) 70% 3%;
   font-family: var(--font-informal);
   color: var(--main-color);
 
