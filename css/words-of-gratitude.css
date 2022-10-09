@@ -1,21 +1,59 @@
 .words-of-gratitude {
     background-image: url("../img/world.png");
-    box-sizing: border-box;
-    vertical-align: baseline;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     padding: 30px 24px;
-    
-}
 
-.workers__gratitude{
-    display: flex;
-    box-sizing: border-box;
-    text-align: center;
-    
+}
+.slider{
+    position: relative;
 }
 .worker__gratitude{
+    min-width: 300px;
+}
+.workers__gratitude {
+    display: flex;
+    text-align: center;
+    max-width: 400px;
+    overflow: hidden;
+    margin: auto;
+}
+@media (min-width:767px) {
+    .worker__gratitude{
+        min-width: 400px;
+    }
+    .workers__gratitude{
+        max-width: 700px;
+    } 
+}
+@media (min-width:845px) {
+    .workers__gratitude{
+        min-width: 300px;
+    }
+    .workers__gratitude{
+        max-width: 860px;
+    } 
+}
+.gratitude__button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    color: var(--white-color);
+
+}
+
+.gratitude__prev {
+    left: 0;
+}
+
+.gratitude__next {
+    right: 0;
+}
+
+.worker__gratitude {
     background-color: var(--white-color);
     display: flex;
     margin: 20px;
@@ -26,27 +64,31 @@
 
 }
 
-.gratitude-title{
+.gratitude-title {
     text-align: center;
 }
 
-.worker__photo{
+.worker__photo {
     border-radius: 50%;
     width: 120px;
     margin-top: 15px;
 
 }
-.worker__thanks{
+
+.worker__thanks {
     margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
 }
-.worker__data{
+
+.worker__data {
     margin-top: 20px;
 }
-.worker__name{
+
+.worker__name {
     margin-top: 15px;
 }
-.worker__position{
+
+.worker__position {
     margin-top: 20px;
 }
