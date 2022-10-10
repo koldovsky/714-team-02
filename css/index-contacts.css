@@ -3,20 +3,24 @@
     display: flex;
     align-items: center;
 }
+
 .contacts__full {
     display: grid;
     gap: 30px;
     text-align: left;
     padding: 90px 0px;
 }
+
 @media (min-width: 767px) {
     .contacts__full {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 .contacts__information {
     padding: 0px 0px 0px 10px;
 }
+
 .contacts__title {
     color: var(--main-color);
     font-family: var(--font-informal);
@@ -27,6 +31,7 @@
     padding: 0;
     text-align: left;
 }
+
 .contacts__text {
     color: var(--phone-color);
     font-family: var(--font-informal);
@@ -38,9 +43,11 @@
     text-align: left;
     line-height: 30px;
 }
+
 .contacts__all {
     padding: 40px 0px 30px 0px;
 }
+
 .contacts__title__small {
     color: var(--main-color);
     font-family: var(--font-informal);
@@ -51,6 +58,7 @@
     padding: 0;
     text-align: left;
 }
+
 .contacts__text__information {
     color: var(--paragraph-color);
     font-family: var(--font-formal);
@@ -60,6 +68,7 @@
     margin: 0;
     padding: 0;
 }
+
 .contacts__link {
     color: var(--phone-color);
     font-family: var(--font-formal);
@@ -69,42 +78,49 @@
     margin: 0;
     padding: 0;
 }
+
 .contacts__link:hover {
     text-decoration: underline;
 }
+
 .contacts__hours,
 .contacts__skype,
 .contacts__phone__email {
     padding: 30px 0px 0px 0px;
     display: grid;
 }
+
 @media (min-width: 767px) {
+
     .contacts__hours,
     .contacts__skype,
     .contacts__phone__email {
         grid-template-columns: 1fr 2fr;
     }
 }
-#contacts__brand__f,
-#contacts__brand__i,
-#contacts__brand__y {
-    border: 1px solid var(--main-color);
+
+.contacts__brands-container {
+    display: flex;
 }
-#contacts__brand__link__f,
-#contacts__brand__link__i,
-#contacts__brand__link__y {
+
+.contacts__brand {
+    border: 1px solid var(--main-color);
+    --brand-size: 30px;
+    --brand-icon-size: 15px;
+}
+
+.contacts__brand i {
     color: var(--main-color);
 }
-#contacts__brand__f:hover,
-#contacts__brand__i:hover,
-#contacts__brand__y:hover {
+
+.contacts__brand:hover {
     background-color: var(--main-color);
 }
-#contacts__brand__link__f:hover,
-#contacts__brand__link__i:hover,
-#contacts__brand__link__y:hover {
+
+.contacts__brand:hover i {
     color: var(--white-color);
 }
+
 .form__contacts {
     background-color: var(--white-color);
     display: flex;
@@ -113,10 +129,12 @@
     align-items: center;
     padding: 90px 0px 100px 0px;
 }
+
 .form__information__all {
     word-wrap: break-word;
     padding: 20px 0px 0px 0px;
 }
+
 .form__information {
     background-color: var(--contacts-field-color);
     color: var(--paragraph-color);
@@ -129,16 +147,19 @@
     text-align: start;
     line-height: 20px;
     border-style: none;
-    border-color: var (--main-color);
+    border-color: var(--main-color);
     border-radius: 2%;
     min-width: 250px;
 }
+
 .form__information:focus {
     outline: 2px solid var(--contacts-field-line-color);
 }
+
 #information__message {
     height: 150px;
 }
+
 .form__information__button {
     color: var(--white-color);
     font-family: var(--font-informal);
@@ -154,6 +175,7 @@
     line-height: 38px;
     min-width: 250px;
 }
+
 .form__information__button:hover {
     background-color: var(--main-overlay-color);
 }

@@ -1,20 +1,21 @@
-#contacts__brand__facebook,
-#contacts__brand__instagram,
-#contacts__brand__youtube {
-    border: 1px solid var(--main-color);
+.page__contacts__brands-container {
+    display: flex;
 }
-#contacts__brand__link__facebook,
-#contacts__brand__link__instagram,
-#contacts__brand__link__youtube {
-    color: var(--main-color);
+
+.page__contacts__brand {
+    border: 1px solid var(--phone-color);
+    --brand-size: 30px;
+    --brand-icon-size: 15px;
 }
-#contacts__brand__facebook:hover,
-#contacts__brand__instagram:hover,
-#contacts__brand__youtube:hover {
-    background-color: var(--main-color);
+
+.page__contacts__brand i {
+    color: var(--phone-color);
 }
-#contacts__brand__link__facebook:hover,
-#contacts__brand__link__instagram:hover,
-#contacts__brand__link__youtube:hover {
+
+.page__contacts__brand:hover {
+    background-color: var(--phone-color);
+}
+
+.page__contacts__brand:hover i {
     color: var(--white-color);
 }

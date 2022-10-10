@@ -142,43 +142,52 @@
     <!--Denis Grabovec-->
     <section class="words-of-gratitude">
       <h2 class="gratitude-title">Words of gratitude</h2>
-      <div class="workers__gratitude">
-        <div class="worker__gratitude">
-          <p class="worker__thanks">
-            “Last week we arrived back from a luxury private guided tour of
-            Paris in a minibus. Our adventure just exceeded all the
-            expectations. Your guide was very friendly and helpful."
-          </p>
-          <p class="worker__data">August 28, 2018</p>
-          <img class="worker__photo" width="100" src="img/workeramanda.jpg" alt="amanda__peterson">
-          <h3 class="worker__name">Amanda Peterson</h3>
-          <h4 class="worker__position">
-            Marketing Director at Junk Food Co.
-          </h4>
-        </div>
-        <div class="worker__gratitude">
-          <p class="worker__thanks">
-            "I am extremely impressed with the service provided by Cilantro.
-            Everything was perfect, from the tour planning to the completion
-            of our dream vacation in Paris. Thank you, guys!"
-          </p>
-          <p class="worker__data">August 14, 2018</p>
-          <img class="worker__photo" width="100" src="img/workerfederico.jpg" alt="federico__stalone">
-          <h3 class="worker__name">Federico Stalone</h3>
-          <h4 class="worker__position">2-Day Burgundy Culture and Wine</h4>
-        </div>
-        <div class="worker__gratitude">
-          <p class="worker__thanks">
-            “We had a great time with kids. That was the first time we used
-            Cilantro and will definitely use them in the future. 10 out of 10
-            travel agency. Tom, our tour guide, was brilliant."
-          </p>
-          <p class="worker__data">August 05, 2018</p>
-          <img class="worker__photo" width="100" src="img/workerstalone.jpg" alt="federico__stalone">
-          <h3 class="worker__name">Federico Stalonne</h3>
-          <h4 class="worker__position">5-Day Paris Charming Package</h4>
+      <div class="slider">
+        <button class="gratitude__button gratitude__prev">
+          <i class="fa fa-angle-left"></i>
+      </button>
+      <button class="gratitude__button gratitude__next">
+          <i class="fa fa-angle-right"></i>
+      </button>
+        <div class="workers__gratitude">
+          <div class="worker__gratitude">
+            <p class="worker__thanks">
+              “Last week we arrived back from a luxury private guided tour of
+              Paris in a minibus. Our adventure just exceeded all the
+              expectations. Your guide was very friendly and helpful."
+            </p>
+            <p class="worker__data">August 28, 2018</p>
+            <img class="worker__photo" width="100" src="img/workeramanda.jpg" alt="amanda__peterson">
+            <h3 class="worker__name">Amanda Peterson</h3>
+            <h4 class="worker__position">
+              Marketing Director at Junk Food Co.
+            </h4>
+          </div>
+          <div class="worker__gratitude">
+            <p class="worker__thanks">
+              "I am extremely impressed with the service provided by Cilantro.
+              Everything was perfect, from the tour planning to the completion
+              of our dream vacation in Paris. Thank you, guys!"
+            </p>
+            <p class="worker__data">August 14, 2018</p>
+            <img class="worker__photo" width="100" src="img/workerfederico.jpg" alt="federico__stalone">
+            <h3 class="worker__name">Federico Stalone</h3>
+            <h4 class="worker__position">2-Day Burgundy Culture and Wine</h4>
+          </div>
+          <div class="worker__gratitude">
+            <p class="worker__thanks">
+              “We had a great time with kids. That was the first time we used
+              Cilantro and will definitely use them in the future. 10 out of 10
+              travel agency. Tom, our tour guide, was brilliant."
+            </p>
+            <p class="worker__data">August 05, 2018</p>
+            <img class="worker__photo" width="100" src="img/workerstalone.jpg" alt="federico__stalone">
+            <h3 class="worker__name">Federico Stalonne</h3>
+            <h4 class="worker__position">5-Day Paris Charming Package</h4>
+          </div>
         </div>
       </div>
+   
     </section>
 
     <section class="awards">
@@ -470,7 +479,7 @@
             <div class="contacts__phone__email__link">
               <ul>
                 <li>
-                  <a class="contacts__link" href="+12345678900" data-action="phone">+1(234)567 89 00</a>
+                  <a class="contacts__link" href="tel:12345678900" data-action="phone">+1(234)567 89 00</a>
                 </li>
                 <li>
                   <a class="contacts__link" href="mailto:cilantro@email.com" data-action="email">cilantro@email.com</a>
@@ -479,15 +488,15 @@
             </div>
           </section>
         </div>
-        <div class="brands-container topbar__brands-container">
-          <a href="https://facebook.com/" target="blank" class="brand topbar__brand" id="contacts__brand__f">
-            <i class="fa-brands fa-facebook-f" id="contacts__brand__link__f"></i>
+        <div class="brands-container contacts__brands-container">
+          <a href="https://facebook.com/" target="blank" class="brand contacts__brand">
+               <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="https://instagram.com/" target="blank" class="brand topbar__brand" id="contacts__brand__i">
-            <i class="fa-brands fa-instagram" id="contacts__brand__link__i"></i>
+          <a href="https://instagram.com/" target="blank" class="brand contacts__brand">
+            <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="https://youtube.com/" target="blank" class="brand topbar__brand" id="contacts__brand__y">
-            <i class="fa-brands fa-youtube" id="contacts__brand__link__y"></i>
+          <a href="https://youtube.com/" target="blank" class="brand contacts__brand">
+            <i class="fa-brands fa-youtube"></i>
           </a>
         </div>
       </div>
@@ -564,6 +573,7 @@
   </footer>
   <script src="js/burger.js"></script>
   <script src="js/guides.js"></script>
+  <script src="js/words-of-gratitude-carousel.js"></script>
   <script src="js/awards.js"></script>
   <script src="js/membership-slider.js"></script>
   <script src="js/war-timer.js"></script>
