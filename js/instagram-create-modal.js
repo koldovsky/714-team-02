@@ -146,6 +146,7 @@ export default function createModal() {
         border-radius: 50%;
         background-color: hsl(var(--bkg-modal-gallery) / .9);
       }
+      
     </style>
     
     `

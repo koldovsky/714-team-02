@@ -1,5 +1,4 @@
 section.latest-on-instagram {
-  /* body */
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -8,10 +7,8 @@ section.latest-on-instagram {
   padding-top: 75px;
   padding-bottom: 90px;
 }
-/* container - в common.css */
 
 .latest-on-instagram__h2 {
-  /* если не получится, то что-то подумать с этим */
   color: var(--white-color);
   font-family: var(--font-informal);
   font-weight: 400;
@@ -19,7 +16,7 @@ section.latest-on-instagram {
   padding: 0;
   font-size: 28px;
 }
-/*  */
+
 .latest-on-instagram__image-container {
   display: flex;
   flex-wrap: wrap;
@@ -30,9 +27,9 @@ section.latest-on-instagram {
   padding: 0 40px;
 }
 
-.insta-button {   /* image-item */
+.insta-button { 
   flex: 1 0 42%;  
-  min-width: 130px; /* проверить по веблиуму */
+  min-width: 130px; 
   cursor: pointer;
   border: none;
   background-color: var(--main-color);
@@ -57,19 +54,13 @@ section.latest-on-instagram {
 }
 
 @media (min-width: 992px) {
-.insta-button {   /* image-item */
+.insta-button {  
   flex: 1 0 28%;  
-  min-width: 130px; /* проверить по веблиуму */
+  min-width: 130px; 
   cursor: pointer;
   border: none;
   background-color: var(--main-color);
 }
 }
 
-@media (min-width: 600px) {
 
-}
-
-@media (min-width: 800px) {
-
-}
