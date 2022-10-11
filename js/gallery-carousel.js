@@ -1,70 +1,52 @@
-(function () {
-  const slides = [
-    `<article class="card">
-                    <img class="card__image" src="img/royal_palace_madrid.jpg" alt="Paris tour image">
-                    <h4 class="gallery__h4">Paris in spring</h4>
-                </article>`,
-    `<article class="card">
-                    <img class="card__image" src="img/luara_castle.jpeg" alt="Burgundy tour image">
-                    <h4 class="gallery__h4">Burgundy culture and wine</h4>
-                </article>`,
-    `<article class="card">
-                    <img class="card__image" src="img/hungarian_parliament.jpeg" alt="Budapest tour image">
-                    <h4 class="gallery__h4">Budapest parliament guided tours</h4>
-                </article>`,
-    `<article class="card">
-                    <img class="card__image" src="img/torre_de_belem.jpg" alt="Normandy tour image">
-                    <h4 class="gallery__h4">Normandy Tour</h4>
-                </article>`,
-    `<article class="card">
-                    <img class="card__image" src="img/paris_seine.jpg" alt="Paris in autumn tour image">
-                    <h4 class="gallery__h4">Paris in autumn</h4>
-                </article>`,
-    `<article class="card">
-                    <img class="card__image" src="img/gothic_buildings.jpg" alt="Paris tour image">
-                    <h4 class="gallery__h4">Charming Paris tour</h4>
-                </article>`,
-  ];
+let slideIndex = 0;
+showSlides(slideIndex);
 
-  let currentSlideIdx = 0;
-  window.addEventListener("resize", renderSlide);
+// Next/previous controls
+function plusSlides(slideNumber) {
+  showSlides((slideIndex += slideNumber));
+}
 
-  const btnNext = document.querySelector(".images-carousel .btn-next");
-  btnNext.addEventListener("click", nextSlide);
+// Thumbnail image controls
+function currentSlide(slideNumber) {
+  showSlides((slideIndex = slideNumber));
+}
 
-  const btnPrev = document.querySelector(".images-carousel .btn-prev");
-  btnPrev.addEventListener("click", prevSlide);
+function showSlides(slideNumber) {
+  let slides = document.getElementsByClassName("card");
+  if (slideNumber > slides.length - 1) {
+    slideIndex = 0;
+  }
+  if (slideNumber < 0) {
+    slideIndex = slides.length - 1;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "grid";
 
-  const slideContainer = document.querySelector(
-    ".images-carousel .carousel-slides"
-  );
+  // два слайди на сторінку
+  if (window.innerWidth >= 767) {
+    let secondSlideIdx;
+    let slideIndexPlusOne = slideIndex + 1;
+    if (slideIndexPlusOne >= slides.length) {
+      secondSlideIdx = 0;
+    } else {
+      secondSlideIdx = slideIndex + 1;
+    }
+    slides[secondSlideIdx].style.display = "grid";
 
-  function renderSlide() {
-    slideContainer.innerHTML = slides[currentSlideIdx];
-
-    if (window.innerWidth >= 767) {
-      const secondSlideIdx =
-        currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
-      slideContainer.innerHTML += slides[secondSlideIdx];
-      if (window.innerWidth >= 991) {
-        const thirdSlideIdx =
-          secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
-        slideContainer.innerHTML += slides[thirdSlideIdx];
+    //три слайди на сторінку
+    if (window.innerWidth >= 991) {
+      let thirdSlideIdx;
+      let secondSlideIdxPlusOne = secondSlideIdx + 1;
+      if (secondSlideIdxPlusOne >= slides.length) {
+        thirdSlideIdx = 0;
+      } else {
+        thirdSlideIdx = secondSlideIdx + 1;
       }
+      slides[thirdSlideIdx].style.display = "grid";
     }
   }
-
-  function nextSlide() {
-    currentSlideIdx =
-      currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
-    renderSlide();
-  }
-
-  function prevSlide() {
-    currentSlideIdx =
-      currentSlideIdx - 1 < 0 ? slides.length - 1 : currentSlideIdx - 1;
-    renderSlide();
-  }
-  renderSlide();
-
-})();
+}
+// обробник події на зміну ширини екрану (щоб адаптивно змінювалась кількість картинох, відображених в галереї)
+window.addEventListener("resize", showSlides);
